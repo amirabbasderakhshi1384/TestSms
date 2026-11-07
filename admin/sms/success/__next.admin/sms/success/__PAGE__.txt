@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[11871,["/_next/static/chunks/0t1z~s925xdmo.js","/_next/static/chunks/0i.l9589uvx0j.js","/_next/static/chunks/0nkq~~4crx90c.js","/_next/static/chunks/02emfa3ccolsu.js","/_next/static/chunks/0-7hm92iqp4z9.js","/_next/static/chunks/0b.sr.j3rf.i3.js"],"default"]
+3:I[897367,["/_next/static/chunks/0t1z~s925xdmo.js","/_next/static/chunks/0i.l9589uvx0j.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"defaultStatus":"success","title":"پیامک‌های موفق و تحویل‌شده به گیرنده (Delivered SMS)","subtitle":"آمار پیام‌های با وضعیت تایید دلیوری موفقیت‌آمیز از اپراتورهای مخابراتی"}],[["$","script","script-0",{"src":"/_next/static/chunks/0b.sr.j3rf.i3.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"GtmLKyibqgDmUJHVWHXiB"}
+5:null
