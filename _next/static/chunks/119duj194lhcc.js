@@ -1,1 +1,477 @@
-(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,632781,e=>{"use strict";let t=(0,e.i(456420).default)("loader-circle",[["path",{d:"M21 12a9 9 0 1 1-6.219-8.56",key:"13zald"}]]);e.s(["Loader2",0,t],632781)},566595,e=>{"use strict";let t=(0,e.i(456420).default)("search",[["path",{d:"m21 21-4.34-4.34",key:"14j7rj"}],["circle",{cx:"11",cy:"11",r:"8",key:"4ej97u"}]]);e.s(["Search",0,t],566595)},867927,e=>{"use strict";let t=(0,e.i(456420).default)("chevron-right",[["path",{d:"m9 18 6-6-6-6",key:"mthhwq"}]]);e.s(["ChevronRight",0,t],867927)},24071,e=>{"use strict";let t=(0,e.i(456420).default)("chevron-left",[["path",{d:"m15 18-6-6 6-6",key:"1wnfg3"}]]);e.s(["ChevronLeft",0,t],24071)},399847,e=>{"use strict";let t=(0,e.i(456420).default)("circle-alert",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["line",{x1:"12",x2:"12",y1:"8",y2:"12",key:"1pkeuh"}],["line",{x1:"12",x2:"12.01",y1:"16",y2:"16",key:"4dfq90"}]]);e.s(["AlertCircle",0,t],399847)},565176,e=>{"use strict";var t,a,s,n=e.i(785725),r=((t={})[t.Confirmed=1]="Confirmed",t[t.Rejected=2]="Rejected",t[t.Pending=3]="Pending",t),i=((a={})[a.Credit=1]="Credit",a[a.BankReceipt=2]="BankReceipt",a[a.Online=3]="Online",a),l=((s={})[s.OpenToAll=1]="OpenToAll",s[s.RequiresAdminApproval=2]="RequiresAdminApproval",s);let o={getParentBankAccounts:()=>n.agentApi.get("agent/Finances/bank-accounts"),getBankAccounts:e=>n.agentApi.get("agent/Finances/my-bank-accounts",{params:e?{searchKey:e}:{}}),getBankAccount:e=>n.agentApi.get(`agent/Finances/my-bank-accounts/${e}`),createBankAccount:e=>n.agentApi.post("agent/Finances/my-bank-accounts",e),updateBankAccount:(e,t)=>n.agentApi.put(`agent/Finances/my-bank-accounts/${e}`,t),deleteBankAccount:e=>n.agentApi.delete(`agent/Finances/my-bank-accounts/${e}`),savePaymentMellatSettings:e=>n.agentApi.put("agent/Finances/payment-mellat-settings",e),savePaymentMelliSettings:e=>n.agentApi.put("agent/Finances/payment-melli-settings",e),savePaymentGatewaySettings:e=>n.agentApi.put("agent/Finances/payment-gateway-settings",e),getWalletStats:e=>n.agentApi.get("agent/Finances/wallet-stats",{params:{Page:e.page??1,PageSize:e.pageSize??10,Year:e.year,Month:e.month,FromDate:e.fromDate,ToDate:e.toDate,Date:e.date,FromWalletBalance:e.fromWalletBalance,ToWalletBalance:e.toWalletBalance,State:e.state}}),getMemberWalletStats:e=>n.agentApi.get("agent/Finances/member-wallet-stats",{params:{Page:e.page??1,PageSize:e.pageSize??10,Year:e.year,Month:e.month,FromDate:e.fromDate,ToDate:e.toDate,Date:e.date,FromWalletBalance:e.fromWalletBalance,ToWalletBalance:e.toWalletBalance,UserName:e.userName,State:e.state}}),createBankReceipt:e=>n.agentApi.post("agent/Finances/bank-receipts",e,{headers:{"Content-Type":"multipart/form-data"}}),getBankReceipts:e=>n.agentApi.get("agent/Finances/bank-receipts",{params:{Page:e?.page??1,PageSize:e?.pageSize??10,SearchKey:e?.searchKey||void 0}}),getUserBankReceipts:e=>n.agentApi.get("agent/Finances/bank-receipts/users",{params:{Page:e?.page??1,PageSize:e?.pageSize??10,SearchKey:e?.searchKey||void 0,Date:e?.date||void 0,State:e?.state||void 0}}),getBankReceipt:e=>n.agentApi.get(`agent/Finances/bank-receipts/${e}`),confirmOrRejectBankReceipt:(e,t)=>n.agentApi.put(`agent/Finances/bank-receipts/${e}`,t)},g={getMessageSendingStats:e=>n.agentApi.get("agent/statistics/message-sending",{params:e}),getMemberWalletStats:o.getMemberWalletStats,getWalletStats:o.getWalletStats};e.s(["BankReceiptState",()=>r,"RegistrationMode",()=>l,"TransactionState",()=>i,"agentAnnouncementsService",0,{getAnnouncements:e=>n.agentApi.get("agent/Announcements/announcements",{params:{Page:e?.page??1,PageSize:e?.pageSize??10,SearchKey:e?.searchKey||void 0,StartShowAtFrom:e?.startShowAtFrom||void 0,StartShowAtTo:e?.startShowAtTo||void 0,EndShowAtFrom:e?.endShowAtFrom||void 0,EndShowAtTo:e?.endShowAtTo||void 0,ShowCountFrom:e?.showCountFrom??void 0,ShowCountTo:e?.showCountTo??void 0,TargetType:e?.targetType??void 0}}),getAnnouncement:e=>n.agentApi.get(`agent/Announcements/announcements/${e}`),createAnnouncement:e=>n.agentApi.post("agent/Announcements/announcements",e),updateAnnouncement:(e,t)=>n.agentApi.put(`agent/Announcements/announcements/${e}`,{...t,id:e}),deleteAnnouncement:e=>n.agentApi.delete(`agent/Announcements/announcements/${e}`)},"agentContactGroupsService",0,{getGroups:e=>n.agentApi.get("agent/ContactGroups",{params:{Page:e?.page??1,PageSize:e?.pageSize??10,SearchKey:e?.searchKey||void 0,BranchId:e?.branchId||void 0}}),getGroupsSummary:()=>n.agentApi.get("agent/ContactGroups/summary"),getGroupContacts:e=>n.agentApi.get(`agent/ContactGroups/${e}/contacts`),createGroup:e=>n.agentApi.post("agent/ContactGroups",e),updateGroup:(e,t)=>n.agentApi.patch(`agent/ContactGroups/${e}`,{...t,id:e}),updateGroupBranches:(e,t)=>n.agentApi.put(`agent/ContactGroups/${e}/branches`,{branchIds:t}),deleteGroup:e=>n.agentApi.delete(`agent/ContactGroups/${e}`)},"agentContactsService",0,{getContacts:e=>n.agentApi.get("agent/Contacts",{params:{ContactGroupId:e.contactGroupId,Page:e.page??1,PageSize:e.pageSize??10,ContactGroupName:e.contactGroupName,PhoneNumber:e.phoneNumber,FirstName:e.firstName,LastName:e.lastName,Email:e.email,DateOfBirth:e.dateOfBirth,Address:e.address,Job:e.job,Gender:e.gender,CreatedAt:e.createdAt,Name:e.name,Description:e.description}}),getContact:e=>n.agentApi.get(`agent/Contacts/${e}`),createContact:e=>n.agentApi.post("agent/Contacts",e),updateContact:(e,t)=>n.agentApi.put(`agent/Contacts/${e}`,{...t,id:e}),deleteContact:e=>n.agentApi.delete(`agent/Contacts/${e}`),createListContact:e=>n.agentApi.post("agent/Contacts/list",e),createListContactByExcel:e=>n.agentApi.post("agent/Contacts/list-by-excel",e),createContactByTxt:e=>n.agentApi.post("agent/Contacts/by-txt",e,{headers:{"Content-Type":"multipart/form-data"}})},"agentDedicatedSmsLinesService",0,{getLines:e=>n.agentApi.get("agent/DedicatedSmsLines",{params:{Page:e?.page??1,PageSize:e?.pageSize??20,Operator:e?.operator||void 0,LineNumber:e?.lineNumber||void 0,DigitsCount:e?.digitsCount??void 0,Nature:e?.nature||void 0,Status:e?.status||void 0,OperationalStatus:e?.operationalStatus||void 0,RegistrationDate:e?.registrationDate||void 0,ExpirationDate:e?.expirationDate||void 0,FromRegistrationDate:e?.fromRegistrationDate||void 0,ToRegistrationDate:e?.toRegistrationDate||void 0,FromExpirationDate:e?.fromExpirationDate||void 0,ToExpirationDate:e?.toExpirationDate||void 0}}),getLine:e=>n.agentApi.get(`agent/DedicatedSmsLines/${e}`),createLine:e=>n.agentApi.post("agent/DedicatedSmsLines",e),assignLine:(e,t)=>n.agentApi.put(`agent/DedicatedSmsLines/${e}/assign`,{...t,id:e}),updateActiveHours:(e,t)=>n.agentApi.put(`agent/DedicatedSmsLines/${e}/active-hours`,{...t,id:e}),updatePermissions:(e,t)=>n.agentApi.put(`agent/DedicatedSmsLines/${e}/permissions`,{...t,id:e}),updateStatus:(e,t)=>n.agentApi.put(`agent/DedicatedSmsLines/${e}/status`,{...t,id:e}),updateBatchStatus:e=>n.agentApi.put("agent/DedicatedSmsLines/batch-status",e),deleteLine:e=>n.agentApi.delete(`agent/DedicatedSmsLines/${e}`),getAvailableForOrder:()=>n.agentApi.get("agent/DedicatedSmsLines/available-for-order"),inquireLine:e=>n.agentApi.post("agent/DedicatedSmsLines/inquire",{lineNumber:e}),orderLine:e=>n.agentApi.post("agent/DedicatedSmsLines/order",e),getMyOrders:()=>n.agentApi.get("agent/DedicatedSmsLines/my-orders")},"agentFinancesService",0,o,"agentGroupBranchesService",0,{getBranches:e=>n.agentApi.get("agent/GroupBranches",{params:{searchKey:e?.searchKey||void 0}}),getMappings:()=>n.agentApi.get("agent/GroupBranches/mappings"),createBranch:e=>n.agentApi.post("agent/GroupBranches",e),updateBranch:(e,t)=>n.agentApi.put(`agent/GroupBranches/${e}`,t),deleteBranch:e=>n.agentApi.delete(`agent/GroupBranches/${e}`)},"agentMeService",0,{getStats:()=>n.agentApi.get("agent/Me/stats"),getAlertSettings:()=>n.agentApi.get("agent/Me/settings/alerts"),updateAlertSettings:e=>n.agentApi.put("agent/Me/settings/alerts",e,{headers:{"Content-Type":"application/json"}}),getGlobalAccessSettings:()=>n.agentApi.get("agent/Me/settings/global-access"),updateGlobalAccessSettings:e=>n.agentApi.put("agent/Me/settings/global-access",e,{headers:{"Content-Type":"application/json"}}),getWarningSettings:()=>n.agentApi.get("agent/Me/settings/warnings"),updateWarningSettings:e=>n.agentApi.put("agent/Me/settings/warnings",e,{headers:{"Content-Type":"application/json"}}),getTwoFactorSettings:()=>n.agentApi.get("agent/Me/settings/two-factor"),updateTwoFactorSettings:e=>n.agentApi.put("agent/Me/settings/two-factor",e,{headers:{"Content-Type":"application/json"}}),getAllowedIps:()=>n.agentApi.get("agent/Me/settings/allowed-ips"),getAllowedIpById:e=>n.agentApi.get(`agent/Me/settings/allowed-ips/${e}`),createAllowedIp:e=>n.agentApi.post("agent/Me/settings/allowed-ips",e,{headers:{"Content-Type":"application/json"}}),updateAllowedIp:(e,t)=>n.agentApi.put(`agent/Me/settings/allowed-ips/${e}`,t,{headers:{"Content-Type":"application/json"}}),deleteAllowedIp:e=>n.agentApi.delete(`agent/Me/settings/allowed-ips/${e}`)},"agentOrgManagementService",0,{getAgents:e=>n.agentApi.get("agent/organization-management/agents",{params:{Page:e?.page??1,PageSize:e?.pageSize??10,SearchKey:e?.searchKey||void 0}}),getAgent:e=>n.agentApi.get(`agent/organization-management/agents/${e}`),createAgent:e=>n.agentApi.post("agent/organization-management/agents",e),updateAgent:(e,t)=>n.agentApi.put(`agent/organization-management/agents/${e}`,{...t,id:e}),deleteAgent:e=>n.agentApi.delete(`agent/organization-management/agents/${e}`),getRoles:e=>n.agentApi.get("agent/organization-management/agents/roles",{params:{Page:e?.page??1,PageSize:e?.pageSize??10,SearchKey:e?.searchKey||void 0}}),getRolesSummary:()=>n.agentApi.get("agent/organization-management/agents/roles/summary"),getRole:e=>n.agentApi.get(`agent/organization-management/agents/roles/${e}`),createRole:e=>n.agentApi.post("agent/organization-management/agents/roles",e),updateRole:(e,t)=>n.agentApi.put(`agent/organization-management/agents/roles/${e}`,{...t,id:e}),deleteRole:e=>n.agentApi.delete(`agent/organization-management/agents/roles/${e}`),getMyTicketMessages:e=>n.agentApi.get(`agent/Tickets/assigned-by-me/${e}`),getAssignedByMeTicket:e=>n.agentApi.get(`agent/Tickets/assigned-by-me/${e}`),getAssignedTickets:e=>n.agentApi.get("agent/organization-management/assigned-to-me",{params:{Page:e?.page??1,PageSize:e?.pageSize??10,SearchKey:e?.searchKey||void 0}}),getAssignedTicketMessages:e=>n.agentApi.get(`agent/organization-management/assigned-to-me/${e}`),getAssignedTicket:e=>n.agentApi.get(`agent/organization-management/assigned-to-me/${e}`),getMyDepartments:()=>n.agentApi.get("agent/organization-management/my-departments"),getMyDepartment:e=>n.agentApi.get(`agent/organization-management/my-departments/${e}`),createMyDepartment:e=>n.agentApi.post("agent/organization-management/my-departments",e),updateMyDepartment:(e,t)=>n.agentApi.put(`agent/organization-management/my-departments/${e}`,{id:e,name:t}),deleteMyDepartment:e=>n.agentApi.delete(`agent/organization-management/my-departments/${e}`)},"agentSmsPricesService",0,{getGroups:()=>n.agentApi.get("agent/SmsPrices/groups"),getGroupsSummary:()=>n.agentApi.get("agent/SmsPrices/groups/summary"),getGroup:e=>n.agentApi.get(`agent/SmsPrices/groups/${e}`),createGroup:e=>n.agentApi.post("agent/SmsPrices/groups",e),updateGroup:(e,t)=>n.agentApi.put(`agent/SmsPrices/groups/${e}`,t),deleteGroup:e=>n.agentApi.delete(`agent/SmsPrices/groups/${e}`),getRanges:()=>n.agentApi.get("agent/SmsPrices/ranges"),getRange:e=>n.agentApi.get(`agent/SmsPrices/ranges/${e}`),createRange:e=>n.agentApi.post("agent/SmsPrices/ranges",e),updateRange:(e,t)=>n.agentApi.put(`agent/SmsPrices/ranges/${e}`,t),deleteRange:e=>n.agentApi.delete(`agent/SmsPrices/ranges/${e}`)},"agentSmsReviewService",0,{getReviews:e=>n.agentApi.get("agent/sms-review",{params:e}),getStats:()=>n.agentApi.get("agent/sms-review/stats"),getReview:e=>n.agentApi.get(`agent/sms-review/${e}`),approveReview:e=>n.agentApi.post(`agent/sms-review/${e}/approve`),rejectReview:(e,t)=>n.agentApi.post(`agent/sms-review/${e}/reject`,{rejectionReason:t}),createReview:e=>n.agentApi.post("agent/sms-review",e)},"agentStatisticsService",0,g,"agentSubsectionsService",0,{getPackages:e=>n.agentApi.get("agent/Subsections/packages",{params:{searchKey:e}}),getPackage:e=>n.agentApi.get(`agent/Subsections/packages/${e}`),createPackage:e=>n.agentApi.post("agent/Subsections/packages",e),updatePackage:(e,t)=>n.agentApi.put(`agent/Subsections/packages/${e}`,t),deletePackage:e=>n.agentApi.delete(`agent/Subsections/packages/${e}`),getAvailablePermissions:()=>n.agentApi.get("agent/Subsections/packages/permissions"),getFormOptions:()=>n.agentApi.get("agent/Subsections/form-options"),getSubsections:e=>n.agentApi.get("agent/Subsections",{params:e}),createSubsection:e=>n.agentApi.post("agent/Subsections",e),updateSubsection:(e,t)=>n.agentApi.put(`agent/Subsections/${e}`,t),deleteSubsection:e=>n.agentApi.delete(`agent/Subsections/${e}`),increaseCredit:(e,t)=>n.agentApi.post(`agent/Subsections/${e}/credit/increase`,t),decreaseCredit:(e,t)=>n.agentApi.post(`agent/Subsections/${e}/credit/decrease`,t),backupCredit:(e,t)=>n.agentApi.post(`agent/Subsections/${e}/credit/backup`,t),toggleBlacklist:(e,t)=>n.agentApi.post(`agent/Subsections/${e}/blacklist`,t),getReceipts:e=>n.agentApi.get("agent/Subsections/receipts",{params:e}),approveReceipt:e=>n.agentApi.put(`agent/Subsections/receipts/${e}/approve`),rejectReceipt:e=>n.agentApi.put(`agent/Subsections/receipts/${e}/reject`),getUsers:e=>n.agentApi.get("agent/Subsections/users",{params:e}),increaseUserCredit:(e,t)=>n.agentApi.post(`agent/Subsections/users/${e}/credit/increase`,t),decreaseUserCredit:(e,t)=>n.agentApi.post(`agent/Subsections/users/${e}/credit/decrease`,t),backupUserCredit:(e,t)=>n.agentApi.post(`agent/Subsections/users/${e}/credit/backup`,t),toggleUserBlacklist:(e,t)=>n.agentApi.post(`agent/Subsections/users/${e}/blacklist`,t),getLines:e=>n.agentApi.get("agent/Subsections/lines",{params:e})},"agentTicketsService",0,{createTicket:e=>n.agentApi.post("agent/Tickets",e,{headers:{"Content-Type":"multipart/form-data"}}),sendTicketMessage:e=>n.agentApi.post("agent/Tickets/Send",e,{headers:{"Content-Type":"multipart/form-data"}}),getMyTickets:e=>n.agentApi.get("agent/Tickets/assigned-by-me",{params:{Page:e?.page??1,PageSize:e?.pageSize??10,SearchKey:e?.searchKey||void 0}}),getDepartments:()=>n.agentApi.get("agent/Tickets/departments"),getAssignedByMeTicket:e=>n.agentApi.get(`agent/Tickets/assigned-by-me/${e}`),getMyTicketDepartments:()=>n.agentApi.get("agent/Tickets/my-departments"),createMyTicketDepartment:e=>n.agentApi.post("agent/Tickets/my-departments",e),updateMyTicketDepartment:(e,t)=>n.agentApi.put(`agent/Tickets/my-departments/${e}`,{id:e,...t}),deleteMyTicketDepartment:e=>n.agentApi.delete(`agent/Tickets/my-departments/${e}`),getAssignedToMeTickets:e=>n.agentApi.get("agent/Tickets/assigned-to-me",{params:{Page:e?.page??1,PageSize:e?.pageSize??10,SearchKey:e?.searchKey||void 0}}),getAssignedToMeTicket:e=>n.agentApi.get(`agent/Tickets/assigned-to-me/${e}`)},"agentUsersService",0,{getBlocks:e=>n.agentApi.get("agent/Users/blocks",{params:{Page:e?.page??1,PageSize:e?.pageSize??10,UserName:e?.userName||void 0,FirstName:e?.firstName||void 0,LastName:e?.lastName||void 0,PhoneNumber:e?.phoneNumber||void 0,BlockedReason:e?.blockedReason||void 0,BlockedAt:e?.blockedAt||void 0}}),updateBlockReason:(e,t)=>n.agentApi.put(`agent/Users/blocks/${e}`,t),unblockUser:e=>n.agentApi.put(`agent/Users/blocks/unblock/${e}`,{}),getFinancialStatement:e=>n.agentApi.get("agent/Users/financial-statement",{params:{Page:e?.page??1,PageSize:e?.pageSize??10,Status:e?.status??void 0,FromDebit:e?.fromDebit??void 0,ToDebit:e?.toDebit??void 0,FromCredit:e?.fromCredit??void 0,ToCredit:e?.toCredit??void 0}}),getFinancialStatementDetails:e=>n.agentApi.get(`agent/Users/financial-statement-details/${e}`),getExpiredPanels:e=>n.agentApi.get("agent/Users/expires",{params:{Page:e?.page??1,PageSize:e?.pageSize??10,UserName:e?.userName||void 0,BlockedAtFrom:e?.blockedAtFrom||void 0,BlockedATo:e?.blockedATo||void 0,PhoneNumber:e?.phoneNumber||void 0,SmsLineNumber:e?.smsLineNumber||void 0}}),updateExpiredPanel:(e,t)=>n.agentApi.put(`agent/Users/expires/${e}`,t),getUsers:e=>n.agentApi.get("agent/Users",{params:{Page:e?.page??1,PageSize:e?.pageSize??50,UserName:e?.userName||void 0,FirstName:e?.firstName||void 0,LastName:e?.lastName||void 0,PhoneNumber:e?.phoneNumber||void 0,IsActive:e?.isActive,FromWalletBalance:e?.fromWalletBalance||void 0,ToWalletBalance:e?.toWalletBalance||void 0,DateOfBirth:e?.dateOfBirth||void 0,ConfirmedAt:e?.confirmedAt||void 0,PanelExpire:e?.panelExpire||void 0,Email:e?.email||void 0}}),loginAsUser:e=>n.agentApi.post(`agent/Users/login-as-user/${e}`),getUser:e=>n.agentApi.get(`agent/Users/${e}`),updateUser:(e,t)=>n.agentApi.put(`agent/Users/${e}`,{id:e,...t}),changePassword:(e,t)=>n.agentApi.put(`agent/Users/password/${e}`,{id:e,...t})},"agentWarrantyLineNumbersService",0,{saveSettings:e=>n.agentApi.put("agent/WarrantyLineNumbers/warranty-line-numbers-settings",e,{headers:{"Content-Type":"application/json"}})}])},764670,e=>{"use strict";e.s(["extractList",0,function(e){return e?Array.isArray(e)?e:Array.isArray(e.data)?e.data:Array.isArray(e.items)?e.items:Array.isArray(e.data?.items)?e.data.items:[]:[]},"extractPagedData",0,function(e){return e?Array.isArray(e)?{items:e,page:1,totalPages:1,total:e.length}:{items:Array.isArray(e.data)?e.data:[],page:e.page??1,totalPages:e.totalPages??1,total:e.total??0}:{items:[],page:1,totalPages:1,total:0}}])},102773,e=>{"use strict";let t=(0,e.i(456420).default)("funnel",[["path",{d:"M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z",key:"sc7q7i"}]]);e.s(["Filter",0,t],102773)},77043,e=>{"use strict";let t=(0,e.i(456420).default)("printer",[["path",{d:"M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2",key:"143wyd"}],["path",{d:"M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6",key:"1itne7"}],["rect",{x:"6",y:"14",width:"12",height:"8",rx:"1",key:"1ue0tg"}]]);e.s(["Printer",0,t],77043)},375775,e=>{"use strict";let t=(0,e.i(456420).default)("arrow-up-right",[["path",{d:"M7 7h10v10",key:"1tivn9"}],["path",{d:"M7 17 17 7",key:"1vkiza"}]]);e.s(["ArrowUpRight",0,t],375775)},227417,e=>{"use strict";var t=e.i(843476),a=e.i(271645),s=e.i(566595),n=e.i(24071),r=e.i(867927),i=e.i(226091),l=e.i(102773),o=e.i(375775);let g=(0,e.i(456420).default)("arrow-down-left",[["path",{d:"M17 7 7 17",key:"15tmo1"}],["path",{d:"M17 17H7V7",key:"1org7z"}]]);var c=e.i(270904),d=e.i(263676),p=e.i(772382),m=e.i(632781),x=e.i(399847),u=e.i(77043),h=e.i(705766),b=e.i(565176),y=e.i(764670);let A=e=>new Intl.NumberFormat("fa-IR").format(e);e.s(["default",0,function(){let[e,f]=(0,a.useState)({status:"",fromDebit:"",toDebit:"",fromCredit:"",toCredit:""}),[v,N]=(0,a.useState)([]),[j,S]=(0,a.useState)(!0),[k,w]=(0,a.useState)(1),[C,$]=(0,a.useState)(1),[D,P]=(0,a.useState)(0),[T,z]=(0,a.useState)(null),[B,M]=(0,a.useState)(null),[F,R]=(0,a.useState)(!1),L=(0,a.useCallback)(async(t=1)=>{S(!0);try{let a=await b.agentUsersService.getFinancialStatement({page:t,pageSize:10,status:""!==e.status?Number(e.status):void 0,fromDebit:""!==e.fromDebit?Number(e.fromDebit):void 0,toDebit:""!==e.toDebit?Number(e.toDebit):void 0,fromCredit:""!==e.fromCredit?Number(e.fromCredit):void 0,toCredit:""!==e.toCredit?Number(e.toCredit):void 0});if(a.data?.isSuccess&&a.data?.data){let{items:e,page:t,totalPages:s,total:n}=(0,y.extractPagedData)(a.data.data);N(e),w(t),$(s),P(n)}}catch{h.default.error("خطا در دریافت صورت‌حساب مالی کاربران")}finally{S(!1)}},[e]);(0,a.useEffect)(()=>{L(1)},[L]);let G=()=>L(1),U=async e=>{z(e),M(null),R(!0);try{let t=await b.agentUsersService.getFinancialStatementDetails(e.userId);t.data?.isSuccess&&t.data?.data?M(t.data.data):h.default.error(t.data?.message||"خطا در دریافت جزییات مالی")}catch{h.default.error("خطا در دریافت جزییات مالی کاربر")}finally{R(!1)}},K=()=>{z(null),M(null)},W=e=>{e<1||e>C||L(e)},E=v.reduce((e,t)=>e+(t.debit??0),0),O=v.reduce((e,t)=>e+(t.credit??0),0);return(0,t.jsxs)("div",{className:"space-y-6 p-6",children:[(0,t.jsxs)("div",{className:"flex md:flex-row flex-col justify-between md:items-center gap-4",children:[(0,t.jsxs)("div",{children:[(0,t.jsx)("h1",{className:"font-black text-gray-800 text-2xl tracking-tight",children:"صورت‌حساب مالی کاربران"}),(0,t.jsx)("p",{className:"mt-1 font-bold text-gray-500",children:"گزارش تراز مالی، بدهی‌ها و بستانکاری‌های کل سیستم"})]}),(0,t.jsxs)("div",{className:"flex items-center gap-3",children:[!j&&(0,t.jsxs)("span",{className:"inline-flex items-center gap-1.5 bg-primary-50 px-4 py-2 rounded-2xl font-black text-primary-600 text-sm",children:[(0,t.jsx)(i.FileText,{className:"w-4 h-4"}),A(D)," کاربر"]}),(0,t.jsxs)("button",{onClick:()=>window.print(),className:"flex items-center gap-2 bg-white shadow-gray-200/50 shadow-sm px-5 py-3 border-2 border-gray-100 hover:border-primary-500 rounded-2xl font-black text-gray-600 hover:text-primary-500 text-xs transition-all",children:[(0,t.jsx)(u.Printer,{className:"w-4 h-4"}),"چاپ گزارش"]})]})]}),(0,t.jsx)("div",{className:"bg-white shadow-gray-200/50 shadow-xl border border-gray-100 rounded-[2.5rem] overflow-hidden",children:(0,t.jsxs)("div",{className:"space-y-6 p-8",children:[(0,t.jsx)("div",{className:"flex items-center gap-3 pr-4 border-primary-500 border-r-4",children:(0,t.jsxs)("h2",{className:"flex items-center gap-2 font-black text-gray-800 text-lg",children:[(0,t.jsx)(l.Filter,{className:"w-5 h-5 text-primary-500"})," فیلترهای جستجو"]})}),(0,t.jsxs)("div",{className:"gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3",children:[(0,t.jsxs)("div",{className:"space-y-2",children:[(0,t.jsx)("label",{className:"mr-2 font-black text-gray-500 text-xs",children:"وضعیت"}),(0,t.jsxs)("select",{value:e.status,onChange:t=>f({...e,status:t.target.value}),className:"bg-gray-50 focus:bg-white px-5 py-3 border-2 border-gray-50 focus:border-primary-500 rounded-2xl outline-none w-full font-bold text-gray-800 transition-all appearance-none",children:[(0,t.jsx)("option",{value:"",children:"همه"}),(0,t.jsx)("option",{value:"1",children:"بدهکار"}),(0,t.jsx)("option",{value:"2",children:"بستانکار"})]})]}),(0,t.jsxs)("div",{className:"space-y-2",children:[(0,t.jsx)("label",{className:"mr-2 font-black text-gray-500 text-xs",children:"بدهکار از (ریال)"}),(0,t.jsx)("input",{type:"number",placeholder:"مبلغ",value:e.fromDebit,onChange:t=>f({...e,fromDebit:t.target.value}),onKeyDown:e=>"Enter"===e.key&&G(),className:"bg-gray-50 focus:bg-white px-5 py-3 border-2 border-gray-50 focus:border-primary-500 rounded-2xl outline-none w-full font-bold text-gray-800 transition-all",dir:"ltr"})]}),(0,t.jsxs)("div",{className:"space-y-2",children:[(0,t.jsx)("label",{className:"mr-2 font-black text-gray-500 text-xs",children:"بدهکار تا (ریال)"}),(0,t.jsx)("input",{type:"number",placeholder:"مبلغ",value:e.toDebit,onChange:t=>f({...e,toDebit:t.target.value}),onKeyDown:e=>"Enter"===e.key&&G(),className:"bg-gray-50 focus:bg-white px-5 py-3 border-2 border-gray-50 focus:border-primary-500 rounded-2xl outline-none w-full font-bold text-gray-800 transition-all",dir:"ltr"})]}),(0,t.jsxs)("div",{className:"space-y-2",children:[(0,t.jsx)("label",{className:"mr-2 font-black text-gray-500 text-xs",children:"بستانکار از (ریال)"}),(0,t.jsx)("input",{type:"number",placeholder:"مبلغ",value:e.fromCredit,onChange:t=>f({...e,fromCredit:t.target.value}),onKeyDown:e=>"Enter"===e.key&&G(),className:"bg-gray-50 focus:bg-white px-5 py-3 border-2 border-gray-50 focus:border-primary-500 rounded-2xl outline-none w-full font-bold text-gray-800 transition-all",dir:"ltr"})]}),(0,t.jsxs)("div",{className:"space-y-2",children:[(0,t.jsx)("label",{className:"mr-2 font-black text-gray-500 text-xs",children:"بستانکار تا (ریال)"}),(0,t.jsx)("input",{type:"number",placeholder:"مبلغ",value:e.toCredit,onChange:t=>f({...e,toCredit:t.target.value}),onKeyDown:e=>"Enter"===e.key&&G(),className:"bg-gray-50 focus:bg-white px-5 py-3 border-2 border-gray-50 focus:border-primary-500 rounded-2xl outline-none w-full font-bold text-gray-800 transition-all",dir:"ltr"})]})]}),(0,t.jsxs)("div",{className:"flex gap-3",children:[(0,t.jsxs)("button",{onClick:G,disabled:j,className:"flex items-center gap-2 bg-primary-500 hover:bg-primary-600 disabled:opacity-60 px-6 py-3 rounded-2xl font-black text-white transition-all",children:[j?(0,t.jsx)(m.Loader2,{className:"w-5 h-5 animate-spin"}):(0,t.jsx)(s.Search,{className:"w-5 h-5"}),"جستجو"]}),(0,t.jsxs)("button",{onClick:()=>{f({status:"",fromDebit:"",toDebit:"",fromCredit:"",toCredit:""})},className:"flex items-center gap-2 bg-gray-100 hover:bg-gray-200 px-6 py-3 rounded-2xl font-black text-gray-700 transition-all",children:[(0,t.jsx)(d.X,{className:"w-5 h-5"}),"پاکسازی"]})]})]})}),(0,t.jsxs)("div",{className:"bg-white shadow-gray-200/50 shadow-xl border border-gray-100 rounded-[2.5rem] overflow-hidden",children:[(0,t.jsx)("div",{className:"overflow-x-auto",children:j?(0,t.jsxs)("div",{className:"flex flex-col items-center justify-center py-24 gap-4",children:[(0,t.jsx)(m.Loader2,{className:"w-10 h-10 text-primary-400 animate-spin"}),(0,t.jsx)("p",{className:"font-bold text-gray-400 text-sm",children:"در حال بارگذاری..."})]}):0===v.length?(0,t.jsxs)("div",{className:"flex flex-col items-center justify-center py-24 gap-4",children:[(0,t.jsx)(x.AlertCircle,{className:"w-12 h-12 text-gray-200"}),(0,t.jsx)("p",{className:"font-bold text-gray-400",children:"هیچ رکوردی یافت نشد"})]}):(0,t.jsxs)("table",{className:"w-full text-right border-collapse",children:[(0,t.jsx)("thead",{children:(0,t.jsxs)("tr",{className:"bg-gray-50/50 border-gray-100 border-b",children:[(0,t.jsx)("th",{className:"px-4 py-4 border-gray-50/50 border-l font-black text-gray-400 text-xs uppercase tracking-widest",children:"ردیف"}),(0,t.jsx)("th",{className:"px-4 py-4 font-black text-gray-800 text-sm",children:"نام کاربری"}),(0,t.jsx)("th",{className:"px-4 py-4 font-black text-gray-800 text-sm",children:"نام"}),(0,t.jsx)("th",{className:"px-4 py-4 font-black text-gray-800 text-sm",children:"نام خانوادگی"}),(0,t.jsx)("th",{className:"px-4 py-4 font-black text-gray-800 text-sm",children:"تلفن همراه"}),(0,t.jsx)("th",{className:"px-4 py-4 font-black text-rose-500 text-sm",children:"بدهکار (ریال)"}),(0,t.jsx)("th",{className:"px-4 py-4 font-black text-emerald-600 text-sm",children:"بستانکار (ریال)"}),(0,t.jsx)("th",{className:"px-4 py-4 font-black text-gray-800 text-sm text-center",children:"وضعیت"}),(0,t.jsx)("th",{className:"px-4 py-4 font-black text-gray-800 text-sm text-center",children:"عملیات"})]})}),(0,t.jsx)("tbody",{className:"divide-y divide-gray-50",children:v.map((e,a)=>(0,t.jsxs)("tr",{className:"group hover:bg-gray-50/80 transition-all",children:[(0,t.jsx)("td",{className:"px-4 py-4 border-gray-50/50 border-l font-bold text-gray-300 text-xs",children:A((k-1)*10+a+1)}),(0,t.jsx)("td",{className:"px-4 py-4",children:(0,t.jsx)("span",{className:"font-black text-gray-800",children:e.userName})}),(0,t.jsx)("td",{className:"px-4 py-4 font-bold text-gray-700",children:e.firstName||"—"}),(0,t.jsx)("td",{className:"px-4 py-4 font-bold text-gray-700",children:e.lastName||"—"}),(0,t.jsx)("td",{className:"px-4 py-4 font-black text-gray-600 text-xs tracking-tighter",dir:"ltr",children:e.phoneNumber||"—"}),(0,t.jsx)("td",{className:"px-4 py-4",children:(0,t.jsx)("span",{className:"font-black text-rose-500",children:A(e.debit??0)})}),(0,t.jsx)("td",{className:"px-4 py-4",children:(0,t.jsx)("span",{className:"font-black text-emerald-600",children:A(e.credit??0)})}),(0,t.jsx)("td",{className:"px-4 py-4 text-center",children:2===e.status?(0,t.jsxs)("div",{className:"inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black bg-emerald-50 text-emerald-600",children:[(0,t.jsx)(o.ArrowUpRight,{className:"w-3 h-3"}),"بستانکار"]}):(0,t.jsxs)("div",{className:"inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black bg-rose-50 text-rose-600",children:[(0,t.jsx)(g,{className:"w-3 h-3"}),"بدهکار"]})}),(0,t.jsx)("td",{className:"px-4 py-4 text-center",children:(0,t.jsx)("button",{onClick:()=>U(e),className:"flex justify-center items-center mx-auto bg-white shadow-sm border-2 border-gray-100 hover:border-primary-500 rounded-xl w-10 h-10 text-gray-400 hover:text-primary-500 transition-all",title:"ریز جزییات مالی",children:(0,t.jsx)(p.Eye,{className:"w-5 h-5"})})})]},e.userId))}),(0,t.jsx)("tfoot",{className:"bg-[#1e293b] text-white",children:(0,t.jsxs)("tr",{children:[(0,t.jsx)("td",{colSpan:5,className:"px-8 py-5 font-black text-primary-400 text-xs uppercase tracking-widest",children:"مجموع این صفحه:"}),(0,t.jsx)("td",{className:"px-4 py-5 font-black text-rose-300",children:A(E)}),(0,t.jsx)("td",{className:"px-4 py-5 font-black text-emerald-400",children:A(O)}),(0,t.jsx)("td",{colSpan:2,className:"px-4 py-5",children:(0,t.jsxs)("div",{className:"flex items-center gap-2 opacity-50 font-black text-[10px]",children:[(0,t.jsx)(c.Wallet,{className:"w-3 h-3"}),"محاسبه شده بر اساس ریال"]})})]})})]})}),!j&&C>1&&(0,t.jsxs)("div",{className:"flex sm:flex-row flex-col justify-between items-center gap-4 bg-gray-50 p-6 border-gray-100 border-t",children:[(0,t.jsxs)("p",{className:"font-black text-[10px] text-gray-400 uppercase tracking-widest",children:["صفحه ",A(k)," از ",A(C)," — مجموع ",A(D)," رکورد"]}),(0,t.jsxs)("div",{className:"flex items-center gap-2",children:[(0,t.jsx)("button",{onClick:()=>W(k+1),disabled:k>=C,className:"flex justify-center items-center bg-white border-2 border-gray-200 hover:border-primary-500 disabled:opacity-40 disabled:cursor-not-allowed rounded-xl w-10 h-10 text-gray-400 hover:text-primary-500 transition-all",children:(0,t.jsx)(r.ChevronRight,{className:"w-5 h-5"})}),(()=>{let e=[];if(C<=7)for(let t=1;t<=C;t++)e.push(t);else{e.push(1),k>3&&e.push("...");for(let t=Math.max(2,k-1);t<=Math.min(C-1,k+1);t++)e.push(t);k<C-2&&e.push("..."),e.push(C)}return e})().map((e,a)=>"..."===e?(0,t.jsx)("span",{className:"text-gray-400 text-sm px-1",children:"..."},`dots-${a}`):(0,t.jsx)("button",{onClick:()=>W(e),className:`flex justify-center items-center rounded-xl w-10 h-10 font-black text-sm transition-all ${k===e?"bg-primary-500 shadow-lg shadow-primary-500/20 text-white":"bg-white border-2 border-gray-200 hover:border-primary-500 text-gray-400 hover:text-primary-500"}`,children:A(e)},e)),(0,t.jsx)("button",{onClick:()=>W(k-1),disabled:k<=1,className:"flex justify-center items-center bg-white border-2 border-gray-200 hover:border-primary-500 disabled:opacity-40 disabled:cursor-not-allowed rounded-xl w-10 h-10 text-gray-400 hover:text-primary-500 transition-all",children:(0,t.jsx)(n.ChevronLeft,{className:"w-5 h-5"})})]})]})]}),T&&(0,t.jsxs)("div",{className:"fixed inset-0 z-50 flex items-center justify-center p-4",children:[(0,t.jsx)("div",{className:"absolute inset-0 bg-black/50 backdrop-blur-sm",onClick:K}),(0,t.jsxs)("div",{className:"relative bg-white rounded-3xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto",children:[(0,t.jsxs)("div",{className:"flex justify-between items-center p-8 pb-0",children:[(0,t.jsxs)("div",{children:[(0,t.jsx)("h2",{className:"font-black text-gray-800 text-xl",children:"ریز جزییات مالی کاربر"}),(0,t.jsx)("p",{className:"mt-1 font-bold text-gray-400 text-xs",children:T.userName})]}),(0,t.jsx)("button",{onClick:K,className:"text-gray-400 hover:text-gray-600 transition-colors",children:(0,t.jsx)(d.X,{className:"w-6 h-6"})})]}),(0,t.jsx)("div",{className:"p-8 space-y-6",children:F?(0,t.jsxs)("div",{className:"flex flex-col items-center justify-center py-20 gap-4",children:[(0,t.jsx)(m.Loader2,{className:"w-10 h-10 text-primary-400 animate-spin"}),(0,t.jsx)("p",{className:"font-bold text-gray-400 text-sm",children:"در حال دریافت جزییات..."})]}):B?(0,t.jsxs)(t.Fragment,{children:[(0,t.jsxs)("div",{className:"bg-gray-50 p-5 rounded-2xl",children:[(0,t.jsx)("h3",{className:"font-black text-gray-700 text-sm mb-4",children:"اطلاعات کاربر"}),(0,t.jsxs)("div",{className:"grid grid-cols-2 md:grid-cols-4 gap-4",children:[(0,t.jsxs)("div",{children:[(0,t.jsx)("span",{className:"block font-bold text-gray-400 text-xs mb-1",children:"نام کاربری"}),(0,t.jsx)("span",{className:"font-black text-gray-800 text-sm",children:B.userName})]}),(0,t.jsxs)("div",{children:[(0,t.jsx)("span",{className:"block font-bold text-gray-400 text-xs mb-1",children:"نام"}),(0,t.jsx)("span",{className:"font-black text-gray-800 text-sm",children:B.firstName||"—"})]}),(0,t.jsxs)("div",{children:[(0,t.jsx)("span",{className:"block font-bold text-gray-400 text-xs mb-1",children:"نام خانوادگی"}),(0,t.jsx)("span",{className:"font-black text-gray-800 text-sm",children:B.lastName||"—"})]}),(0,t.jsxs)("div",{children:[(0,t.jsx)("span",{className:"block font-bold text-gray-400 text-xs mb-1",children:"شماره تماس"}),(0,t.jsx)("span",{className:"font-black text-gray-800 text-sm",dir:"ltr",children:B.phoneNumber||"—"})]})]})]}),(0,t.jsxs)("div",{className:"grid grid-cols-1 md:grid-cols-3 gap-4",children:[(0,t.jsxs)("div",{className:"bg-rose-50 border border-rose-100 p-5 rounded-2xl",children:[(0,t.jsxs)("div",{className:"flex items-center gap-2 mb-2",children:[(0,t.jsx)(g,{className:"w-4 h-4 text-rose-500"}),(0,t.jsx)("span",{className:"font-black text-rose-500 text-xs",children:"بدهکار"})]}),(0,t.jsx)("p",{className:"font-black text-rose-600 text-xl",children:A(B.totalDebit??0)}),(0,t.jsx)("p",{className:"font-bold text-rose-400 text-xs mt-1",children:"ریال"})]}),(0,t.jsxs)("div",{className:"bg-emerald-50 border border-emerald-100 p-5 rounded-2xl",children:[(0,t.jsxs)("div",{className:"flex items-center gap-2 mb-2",children:[(0,t.jsx)(o.ArrowUpRight,{className:"w-4 h-4 text-emerald-500"}),(0,t.jsx)("span",{className:"font-black text-emerald-500 text-xs",children:"بستانکار"})]}),(0,t.jsx)("p",{className:"font-black text-emerald-600 text-xl",children:A(B.totalCredit??0)}),(0,t.jsx)("p",{className:"font-bold text-emerald-400 text-xs mt-1",children:"ریال"})]}),(0,t.jsxs)("div",{className:`border p-5 rounded-2xl ${2===B.status?"bg-emerald-50 border-emerald-100":"bg-rose-50 border-rose-100"}`,children:[(0,t.jsxs)("div",{className:"flex items-center gap-2 mb-2",children:[(0,t.jsx)(c.Wallet,{className:`w-4 h-4 ${2===B.status?"text-emerald-500":"text-rose-500"}`}),(0,t.jsx)("span",{className:`font-black text-xs ${2===B.status?"text-emerald-500":"text-rose-500"}`,children:"وضعیت کلی"})]}),(0,t.jsx)("p",{className:`font-black text-xl ${2===B.status?"text-emerald-600":"text-rose-600"}`,children:2===B.status?"بستانکار":"بدهکار"}),(0,t.jsxs)("p",{className:`font-bold text-xs mt-1 ${2===B.status?"text-emerald-400":"text-rose-400"}`,children:[A(Math.abs((B.totalCredit??0)-(B.totalDebit??0)))," ریال"]})]})]}),B.details&&B.details.length>0?(0,t.jsxs)("div",{className:"bg-white border border-gray-100 rounded-2xl overflow-hidden",children:[(0,t.jsx)("div",{className:"px-5 py-4 border-b border-gray-50 bg-gray-50/50",children:(0,t.jsx)("h3",{className:"font-black text-gray-700 text-sm",children:"تراکنش‌های مالی"})}),(0,t.jsx)("div",{className:"overflow-x-auto",children:(0,t.jsxs)("table",{className:"w-full text-right border-collapse",children:[(0,t.jsx)("thead",{children:(0,t.jsxs)("tr",{className:"bg-gray-50/50 border-gray-100 border-b",children:[(0,t.jsx)("th",{className:"px-4 py-3 font-black text-gray-400 text-xs tracking-widest",children:"تاریخ"}),(0,t.jsx)("th",{className:"px-4 py-3 font-black text-gray-800 text-xs",children:"توضیح"}),(0,t.jsx)("th",{className:"px-4 py-3 font-black text-rose-500 text-xs",children:"بدهکار (ریال)"}),(0,t.jsx)("th",{className:"px-4 py-3 font-black text-emerald-600 text-xs",children:"بستانکار (ریال)"}),(0,t.jsx)("th",{className:"px-4 py-3 font-black text-gray-800 text-xs",children:"مانده (ریال)"})]})}),(0,t.jsx)("tbody",{className:"divide-y divide-gray-50",children:B.details.map((e,a)=>(0,t.jsxs)("tr",{className:"hover:bg-gray-50/80 transition-all",children:[(0,t.jsx)("td",{className:"px-4 py-3 font-bold text-gray-500 text-xs",children:e.date||"—"}),(0,t.jsx)("td",{className:"px-4 py-3 font-bold text-gray-700 text-xs",children:e.description||"—"}),(0,t.jsx)("td",{className:"px-4 py-3 font-black text-rose-500 text-xs",children:(e.debit??0)>0?A(e.debit):"—"}),(0,t.jsx)("td",{className:"px-4 py-3 font-black text-emerald-600 text-xs",children:(e.credit??0)>0?A(e.credit):"—"}),(0,t.jsx)("td",{className:"px-4 py-3",children:(0,t.jsx)("span",{className:`font-black text-xs ${(e.balance??0)>=0?"text-emerald-600":"text-rose-500"}`,children:A(Math.abs(e.balance??0))})})]},e.id??a))})]})})]}):(0,t.jsxs)("div",{className:"flex flex-col items-center justify-center py-12 gap-3 bg-gray-50 rounded-2xl",children:[(0,t.jsx)(x.AlertCircle,{className:"w-10 h-10 text-gray-200"}),(0,t.jsx)("p",{className:"font-bold text-gray-400 text-sm",children:"تراکنشی برای این کاربر ثبت نشده است"})]})]}):(0,t.jsxs)("div",{className:"flex flex-col items-center justify-center py-20 gap-4",children:[(0,t.jsx)(x.AlertCircle,{className:"w-12 h-12 text-gray-200"}),(0,t.jsx)("p",{className:"font-bold text-gray-400",children:"خطا در دریافت جزییات"}),(0,t.jsx)("button",{onClick:()=>U(T),className:"flex items-center gap-2 bg-primary-500 hover:bg-primary-600 px-5 py-2.5 rounded-xl font-black text-white text-sm transition-colors",children:"تلاش مجدد"})]})})]})]})]})}],227417)}]);
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,689664,e=>{"use strict";let s=(0,e.i(456420).default)("check",[["path",{d:"M20 6 9 17l-5-5",key:"1gmf2c"}]]);e.s(["Check",0,s],689664)},508734,e=>{"use strict";let s=(0,e.i(456420).default)("copy",[["rect",{width:"14",height:"14",x:"8",y:"8",rx:"2",ry:"2",key:"17jyea"}],["path",{d:"M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2",key:"zix9uf"}]]);e.s(["Copy",0,s],508734)},13285,e=>{"use strict";let s=(0,e.i(456420).default)("layers",[["path",{d:"M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z",key:"zw3jo"}],["path",{d:"M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12",key:"1wduqc"}],["path",{d:"M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17",key:"kqbvx6"}]]);e.s(["Layers",0,s],13285)},768877,e=>{"use strict";let s=(0,e.i(456420).default)("arrow-right",[["path",{d:"M5 12h14",key:"1ays0h"}],["path",{d:"m12 5 7 7-7 7",key:"xquz4c"}]]);e.s(["ArrowRight",0,s],768877)},667774,e=>{"use strict";var s=e.i(843476),r=e.i(271645),a=e.i(508734),t=e.i(689664),n=e.i(584026),i=e.i(91511),o=e.i(13285),d=e.i(730274),l=e.i(444594);let c=(0,e.i(456420).default)("code-xml",[["path",{d:"m18 16 4-4-4-4",key:"1inbqp"}],["path",{d:"m6 8-4 4 4 4",key:"15zrgr"}],["path",{d:"m14.5 4-5 16",key:"e7oirm"}]]);var u=e.i(768877),p=e.i(705766),m=e.i(618566);let x=({code:e,language:n,label:i})=>{let[o,d]=(0,r.useState)(!1);return(0,s.jsxs)("div",{className:"group bg-surface-900 mb-6 border border-white/5 rounded-2xl overflow-hidden shadow-lg",children:[(0,s.jsxs)("div",{className:"flex justify-between items-center bg-white/5 px-4 py-2.5 border-b border-white/5",children:[(0,s.jsxs)("div",{className:"flex items-center gap-2",children:[(0,s.jsx)("span",{className:"font-bold text-[10px] text-white/40 uppercase tracking-widest",children:n}),(0,s.jsx)("span",{className:"font-medium text-white/80 text-xs",children:i})]}),(0,s.jsxs)("button",{onClick:()=>{navigator.clipboard.writeText(e),d(!0),p.default.success("کد در کلیپ‌بورد کپی شد!"),setTimeout(()=>d(!1),2e3)},className:"flex items-center gap-1.5 hover:bg-white/10 px-2.5 py-1 rounded-lg text-white/60 hover:text-white transition-colors cursor-pointer text-xs",children:[o?(0,s.jsx)(t.Check,{className:"w-3.5 h-3.5 text-emerald-400"}):(0,s.jsx)(a.Copy,{className:"w-3.5 h-3.5"}),(0,s.jsx)("span",{children:o?"کپی شد":"کپی"})]})]}),(0,s.jsx)("pre",{className:"bg-black/25 p-5 max-h-[460px] overflow-x-auto font-mono text-[13px] leading-relaxed custom-scrollbar text-emerald-400",dir:"ltr",children:(0,s.jsx)("code",{children:e})})]})};e.s(["default",0,function(){let e=(0,m.useRouter)(),[a,t]=(0,r.useState)("url"),[p,g]=(0,r.useState)("send"),[y,h]=(0,r.useState)("node"),f="https://apis.smsnegar.com",N={"url-send-curl":`curl -X GET "${f}/api/v1/user/Messages/url/single?RecipientNumber=09172378789&Username=your_username&Password=your_password&DomainName=your_domain&SmsLineNumber=3000XXXX&MessageText=${encodeURIComponent("سلام، پیامک آزمایشی")}&ApiKey=YOUR_API_KEY"`,"url-send-node":`const axios = require('axios');
+
+async function sendSmsUrl() {
+  try {
+    const response = await axios.get('${f}/api/v1/user/Messages/url/single', {
+      params: {
+        RecipientNumber: '09172378789',
+        Username: 'your_username',
+        Password: 'your_password',
+        DomainName: 'your_domain',
+        SmsLineNumber: '3000XXXX',
+        MessageText: 'سلام، پیامک آزمایشی',
+        ApiKey: 'YOUR_API_KEY'
+      }
+    });
+
+    console.log('Response:', response.data);
+  } catch (error) {
+    console.error('Error:', error.response?.data || error.message);
+  }
+}
+
+sendSmsUrl();`,"url-send-python":`import requests
+
+url = "${f}/api/v1/user/Messages/url/single"
+params = {
+    "RecipientNumber": "09172378789",
+    "Username": "your_username",
+    "Password": "your_password",
+    "DomainName": "your_domain",
+    "SmsLineNumber": "3000XXXX",
+    "MessageText": "سلام، پیامک آزمایشی",
+    "ApiKey": "YOUR_API_KEY"
+}
+
+response = requests.get(url, params=params)
+print("Response:", response.json())`,"url-send-php":`<?php
+$url = "${f}/api/v1/user/Messages/url/single?" . http_build_query([
+    'RecipientNumber' => '09172378789',
+    'Username'        => 'your_username',
+    'Password'        => 'your_password',
+    'DomainName'      => 'your_domain',
+    'SmsLineNumber'   => '3000XXXX',
+    'MessageText'     => 'سلام، پیامک آزمایشی',
+    'ApiKey'          => 'YOUR_API_KEY'
+]);
+
+$response = file_get_contents($url);
+echo "Response: " . $response;
+?>`,"url-send-csharp":`using System;
+using System.Net.Http;
+using System.Threading.Tasks;
+
+class Program
+{
+    static async Task Main()
+    {
+        using var client = new HttpClient();
+        string url = "${f}/api/v1/user/Messages/url/single" +
+                     "?RecipientNumber=09172378789" +
+                     "&Username=your_username" +
+                     "&Password=your_password" +
+                     "&DomainName=your_domain" +
+                     "&SmsLineNumber=3000XXXX" +
+                     "&MessageText=" + Uri.EscapeDataString("سلام، پیامک آزمایشی") +
+                     "&ApiKey=YOUR_API_KEY";
+
+        var response = await client.GetAsync(url);
+        string result = await response.Content.ReadAsStringAsync();
+        Console.WriteLine("Response: " + result);
+    }
+}`,"url-send-go":`package main
+
+import (
+  "fmt"
+  "io"
+  "net/http"
+  "net/url"
+)
+
+func main() {
+  baseURL := "${f}/api/v1/user/Messages/url/single"
+  params := url.Values{}
+  params.Add("RecipientNumber", "09172378789")
+  params.Add("Username", "your_username")
+  params.Add("Password", "your_password")
+  params.Add("DomainName", "your_domain")
+  params.Add("SmsLineNumber", "3000XXXX")
+  params.Add("MessageText", "سلام، پیامک آزمایشی")
+  params.Add("ApiKey", "YOUR_API_KEY")
+
+  resp, err := http.Get(baseURL + "?" + params.Encode())
+  if err != nil {
+    panic(err)
+  }
+  defer resp.Body.Close()
+
+  body, _ := io.ReadAll(resp.Body)
+  fmt.Println("Response:", string(body))
+}`,"url-received-curl":`curl -X GET "${f}/api/v1/user/Messages/url/received?UserName=your_username&Password=your_password&DomainName=your_domain&ApiKey=YOUR_API_KEY&IsAllMessage=true"`,"url-received-node":`const axios = require('axios');
+
+async function getReceivedUrl() {
+  try {
+    const response = await axios.get('${f}/api/v1/user/Messages/url/received', {
+      params: {
+        UserName: 'your_username',
+        Password: 'your_password',
+        DomainName: 'your_domain',
+        ApiKey: 'YOUR_API_KEY',
+        IsAllMessage: true,
+        FromNumber: '', // اختیاری
+        FromDate: '',   // اختیاری
+        ToDate: ''      // اختیاری
+      }
+    });
+
+    console.log('Received Messages:', response.data);
+  } catch (error) {
+    console.error('Error:', error.response?.data || error.message);
+  }
+}
+
+getReceivedUrl();`,"url-received-python":`import requests
+
+url = "${f}/api/v1/user/Messages/url/received"
+params = {
+    "UserName": "your_username",
+    "Password": "your_password",
+    "DomainName": "your_domain",
+    "ApiKey": "YOUR_API_KEY",
+    "IsAllMessage": True
+}
+
+response = requests.get(url, params=params)
+print("Received Messages:", response.json())`,"url-received-php":`<?php
+$url = "${f}/api/v1/user/Messages/url/received?" . http_build_query([
+    'UserName'     => 'your_username',
+    'Password'     => 'your_password',
+    'DomainName'   => 'your_domain',
+    'ApiKey'       => 'YOUR_API_KEY',
+    'IsAllMessage' => 'true'
+]);
+
+$response = file_get_contents($url);
+echo "Received Messages: " . $response;
+?>`,"url-received-csharp":`using System;
+using System.Net.Http;
+using System.Threading.Tasks;
+
+class Program
+{
+    static async Task Main()
+    {
+        using var client = new HttpClient();
+        string url = "${f}/api/v1/user/Messages/url/received" +
+                     "?UserName=your_username" +
+                     "&Password=your_password" +
+                     "&DomainName=your_domain" +
+                     "&ApiKey=YOUR_API_KEY" +
+                     "&IsAllMessage=true";
+
+        var response = await client.GetAsync(url);
+        string result = await response.Content.ReadAsStringAsync();
+        Console.WriteLine("Received Messages: " + result);
+    }
+}`,"url-received-go":`package main
+
+import (
+  "fmt"
+  "io"
+  "net/http"
+  "net/url"
+)
+
+func main() {
+  baseURL := "${f}/api/v1/user/Messages/url/received"
+  params := url.Values{}
+  params.Add("UserName", "your_username")
+  params.Add("Password", "your_password")
+  params.Add("DomainName", "your_domain")
+  params.Add("ApiKey", "YOUR_API_KEY")
+  params.Add("IsAllMessage", "true")
+
+  resp, err := http.Get(baseURL + "?" + params.Encode())
+  if err != nil {
+    panic(err)
+  }
+  defer resp.Body.Close()
+
+  body, _ := io.ReadAll(resp.Body)
+  fmt.Println("Received Messages:", string(body))
+}`,"rest-send-curl":`curl -X POST "${f}/api/v1/user/Messages/rest/single" \\
+  -H "Content-Type: application/json" \\
+  -d '{
+    "recipientNumber": "09172378789",
+    "username": "your_username",
+    "password": "your_password",
+    "domainName": "your_domain",
+    "smsLineNumber": "3000XXXX",
+    "messageText": "سلام، پیامک ارسالی از REST API",
+    "apiKey": "YOUR_API_KEY"
+  }'`,"rest-send-node":`const axios = require('axios');
+
+async function sendSmsRest() {
+  const payload = {
+    recipientNumber: "09172378789",
+    username: "your_username",
+    password: "your_password",
+    domainName: "your_domain",
+    smsLineNumber: "3000XXXX",
+    messageText: "سلام، پیامک ارسالی از REST API",
+    apiKey: "YOUR_API_KEY"
+  };
+
+  try {
+    const response = await axios.post('${f}/api/v1/user/Messages/rest/single', payload);
+    console.log('Result:', response.data);
+  } catch (error) {
+    console.error('Error:', error.response?.data || error.message);
+  }
+}
+
+sendSmsRest();`,"rest-send-python":`import requests
+
+url = "${f}/api/v1/user/Messages/rest/single"
+payload = {
+    "recipientNumber": "09172378789",
+    "username": "your_username",
+    "password": "your_password",
+    "domainName": "your_domain",
+    "smsLineNumber": "3000XXXX",
+    "messageText": "سلام، پیامک ارسالی از REST API",
+    "apiKey": "YOUR_API_KEY"
+}
+
+response = requests.post(url, json=payload)
+print("Result:", response.json())`,"rest-send-php":`<?php
+$url = "${f}/api/v1/user/Messages/rest/single";
+
+$payload = json_encode([
+    "recipientNumber" => "09172378789",
+    "username"        => "your_username",
+    "password"        => "your_password",
+    "domainName"      => "your_domain",
+    "smsLineNumber"   => "3000XXXX",
+    "messageText"     => "سلام، پیامک ارسالی از REST API",
+    "apiKey"          => "YOUR_API_KEY"
+]);
+
+$ch = curl_init($url);
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, [
+    'Content-Type: application/json',
+    'Content-Length: ' . strlen($payload)
+]);
+
+$response = curl_exec($ch);
+curl_close($ch);
+
+echo "Result: " . $response;
+?>`,"rest-send-csharp":`using System;
+using System.Text;
+using System.Net.Http;
+using System.Threading.Tasks;
+
+class Program
+{
+    static async Task Main()
+    {
+        using var client = new HttpClient();
+        string url = "${f}/api/v1/user/Messages/rest/single";
+
+        string jsonPayload = @"{
+            ""recipientNumber"": ""09172378789"",
+            ""username"": ""your_username"",
+            ""password"": ""your_password"",
+            ""domainName"": ""your_domain"",
+            ""smsLineNumber"": ""3000XXXX"",
+            ""messageText"": ""سلام، پیامک ارسالی از REST API"",
+            ""apiKey"": ""YOUR_API_KEY""
+        }";
+
+        var content = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
+        var response = await client.PostAsync(url, content);
+        string result = await response.Content.ReadAsStringAsync();
+
+        Console.WriteLine("Result: " + result);
+    }
+}`,"rest-send-go":`package main
+
+import (
+  "bytes"
+  "encoding/json"
+  "fmt"
+  "io"
+  "net/http"
+)
+
+func main() {
+  url := "${f}/api/v1/user/Messages/rest/single"
+
+  payload := map[string]string{
+    "recipientNumber": "09172378789",
+    "username":        "your_username",
+    "password":        "your_password",
+    "domainName":      "your_domain",
+    "smsLineNumber":   "3000XXXX",
+    "messageText":     "سلام، پیامک ارسالی از REST API",
+    "apiKey":          "YOUR_API_KEY",
+  }
+
+  jsonData, _ := json.Marshal(payload)
+  resp, err := http.Post(url, "application/json", bytes.NewBuffer(jsonData))
+  if err != nil {
+    panic(err)
+  }
+  defer resp.Body.Close()
+
+  body, _ := io.ReadAll(resp.Body)
+  fmt.Println("Result:", string(body))
+}`,"rest-received-curl":`curl -X POST "${f}/api/v1/user/Messages/rest/received" \\
+  -H "Content-Type: application/json" \\
+  -d '{
+    "userName": "your_username",
+    "password": "your_password",
+    "domainName": "your_domain",
+    "apiKey": "YOUR_API_KEY",
+    "isAllMessage": true,
+    "fromNumber": "09123456789",
+    "fromDate": "1403/01/01",
+    "toDate": "1403/01/30"
+  }'`,"rest-received-node":`const axios = require('axios');
+
+async function getReceivedRest() {
+  const payload = {
+    userName: "your_username",
+    password: "your_password",
+    domainName: "your_domain",
+    apiKey: "YOUR_API_KEY",
+    isAllMessage: true,
+    fromNumber: "09123456789",
+    fromDate: "1403/01/01",
+    toDate: "1403/01/30"
+  };
+
+  try {
+    const response = await axios.post('${f}/api/v1/user/Messages/rest/received', payload);
+    console.log('Received Messages:', response.data);
+  } catch (error) {
+    console.error('Error:', error.response?.data || error.message);
+  }
+}
+
+getReceivedRest();`,"rest-received-python":`import requests
+
+url = "${f}/api/v1/user/Messages/rest/received"
+payload = {
+    "userName": "your_username",
+    "password": "your_password",
+    "domainName": "your_domain",
+    "apiKey": "YOUR_API_KEY",
+    "isAllMessage": True,
+    "fromNumber": "09123456789",
+    "fromDate": "1403/01/01",
+    "toDate": "1403/01/30"
+}
+
+response = requests.post(url, json=payload)
+print("Received Messages:", response.json())`,"rest-received-php":`<?php
+$url = "${f}/api/v1/user/Messages/rest/received";
+
+$payload = json_encode([
+    "userName"     => "your_username",
+    "password"     => "your_password",
+    "domainName"   => "your_domain",
+    "apiKey"       => "YOUR_API_KEY",
+    "isAllMessage" => true,
+    "fromNumber"   => "09123456789",
+    "fromDate"     => "1403/01/01",
+    "toDate"       => "1403/01/30"
+]);
+
+$ch = curl_init($url);
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, [
+    'Content-Type: application/json',
+    'Content-Length: ' . strlen($payload)
+]);
+
+$response = curl_exec($ch);
+curl_close($ch);
+
+echo "Received Messages: " . $response;
+?>`,"rest-received-csharp":`using System;
+using System.Text;
+using System.Net.Http;
+using System.Threading.Tasks;
+
+class Program
+{
+    static async Task Main()
+    {
+        using var client = new HttpClient();
+        string url = "${f}/api/v1/user/Messages/rest/received";
+
+        string jsonPayload = @"{
+            ""userName"": ""your_username"",
+            ""password"": ""your_password"",
+            ""domainName"": ""your_domain"",
+            ""apiKey"": ""YOUR_API_KEY"",
+            ""isAllMessage"": true,
+            ""fromNumber"": ""09123456789"",
+            ""fromDate"": ""1403/01/01"",
+            ""toDate"": ""1403/01/30""
+        }";
+
+        var content = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
+        var response = await client.PostAsync(url, content);
+        string result = await response.Content.ReadAsStringAsync();
+
+        Console.WriteLine("Received Messages: " + result);
+    }
+}`,"rest-received-go":`package main
+
+import (
+  "bytes"
+  "encoding/json"
+  "fmt"
+  "io"
+  "net/http"
+)
+
+func main() {
+  url := "${f}/api/v1/user/Messages/rest/received"
+
+  payload := map[string]interface{}{
+    "userName":     "your_username",
+    "password":     "your_password",
+    "domainName":   "your_domain",
+    "apiKey":       "YOUR_API_KEY",
+    "isAllMessage": true,
+    "fromNumber":   "09123456789",
+    "fromDate":     "1403/01/01",
+    "toDate":       "1403/01/30",
+  }
+
+  jsonData, _ := json.Marshal(payload)
+  resp, err := http.Post(url, "application/json", bytes.NewBuffer(jsonData))
+  if err != nil {
+    panic(err)
+  }
+  defer resp.Body.Close()
+
+  body, _ := io.ReadAll(resp.Body)
+  fmt.Println("Received Messages:", string(body))
+}`}[`${a}-${p}-${y}`]||"// نمونه کدی برای این زبان تعریف نشده است.";return(0,s.jsxs)("div",{className:"mx-auto px-4 pb-20 max-w-6xl space-y-8",children:[(0,s.jsxs)("div",{className:"flex items-center justify-between",children:[(0,s.jsxs)("button",{onClick:()=>e.push("/dashboard/programming/api-key"),className:"flex items-center gap-2 bg-white px-4 py-2 border border-surface-200 rounded-xl text-surface-600 font-bold text-xs hover:bg-surface-50 transition-colors cursor-pointer",children:[(0,s.jsx)(u.ArrowRight,{className:"w-4 h-4"}),"بازگشت به ساخت کلید و راهنما"]}),(0,s.jsxs)("div",{className:"flex items-center gap-2 text-surface-400 text-xs",children:[(0,s.jsx)("span",{children:"API Version 1.0"}),(0,s.jsx)("span",{children:"•"}),(0,s.jsxs)("span",{className:"text-emerald-600 font-bold flex items-center gap-1",children:[(0,s.jsx)("span",{className:"w-2 h-2 rounded-full bg-emerald-500 animate-pulse"}),"سرویس فعال"]})]})]}),(0,s.jsxs)("div",{className:"relative bg-surface-900 shadow-2xl p-8 sm:p-12 rounded-[2.5rem] overflow-hidden text-white",children:[(0,s.jsx)("div",{className:"top-0 right-0 absolute bg-primary-500/20 blur-[120px] w-1/3 h-full pointer-events-none"}),(0,s.jsx)("div",{className:"bottom-0 left-0 absolute blur-[100px] w-1/2 h-full bg-blue-500/10 pointer-events-none"}),(0,s.jsxs)("div",{className:"z-10 relative space-y-4",children:[(0,s.jsxs)("div",{className:"inline-flex items-center gap-2 bg-white/10 px-4 py-1.5 border border-white/10 rounded-full font-black text-[10px] text-primary-400 uppercase tracking-widest",children:[(0,s.jsx)(n.ShieldCheck,{className:"w-3.5 h-3.5"}),"مستندات و نمونه کدهای توسعه‌دهندگان"]}),(0,s.jsxs)("h1",{className:"font-black text-3xl sm:text-5xl leading-tight",children:["نمونه کدهای پیاده‌سازی ",(0,s.jsx)("span",{className:"text-primary-400",children:"API پیامک"})]}),(0,s.jsxs)("p",{className:"text-surface-300 text-sm sm:text-base max-w-2xl leading-relaxed",children:["راهنمای جامع ارسال و دریافت پیامک از طریق دو متد استاندارد ",(0,s.jsx)("strong",{className:"text-white",children:"URL (GET)"})," و ",(0,s.jsx)("strong",{className:"text-white",children:"REST (POST)"})," همراه با سورس‌کدهای اجرایی در زبان‌های مختلف."]})]})]}),(0,s.jsxs)("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-4",children:[(0,s.jsxs)("div",{className:"bg-white p-4 border border-surface-100 rounded-3xl shadow-sm flex items-center justify-between",children:[(0,s.jsxs)("div",{children:[(0,s.jsx)("span",{className:"text-xs font-bold text-surface-500",children:"متد ارتباطی:"}),(0,s.jsx)("p",{className:"font-black text-surface-900 text-sm",children:"url"===a?"URL Method (GET)":"REST API (POST)"})]}),(0,s.jsxs)("div",{className:"flex gap-1.5 bg-surface-100 p-1.5 rounded-2xl",children:[(0,s.jsxs)("button",{onClick:()=>t("url"),className:`flex items-center gap-2 px-4 py-2 rounded-xl font-black text-xs transition-all cursor-pointer ${"url"===a?"bg-white text-emerald-700 shadow-sm":"text-surface-600 hover:text-surface-900"}`,children:[(0,s.jsx)(i.Globe,{className:"w-3.5 h-3.5 text-emerald-600"}),"URL (GET)"]}),(0,s.jsxs)("button",{onClick:()=>t("rest"),className:`flex items-center gap-2 px-4 py-2 rounded-xl font-black text-xs transition-all cursor-pointer ${"rest"===a?"bg-white text-blue-700 shadow-sm":"text-surface-600 hover:text-surface-900"}`,children:[(0,s.jsx)(o.Layers,{className:"w-3.5 h-3.5 text-blue-600"}),"REST (POST)"]})]})]}),(0,s.jsxs)("div",{className:"bg-white p-4 border border-surface-100 rounded-3xl shadow-sm flex items-center justify-between",children:[(0,s.jsxs)("div",{children:[(0,s.jsx)("span",{className:"text-xs font-bold text-surface-500",children:"عملیات پیامک:"}),(0,s.jsx)("p",{className:"font-black text-surface-900 text-sm",children:"send"===p?"ارسال تک پیامک":"دریافت پیامک‌ها"})]}),(0,s.jsxs)("div",{className:"flex gap-1.5 bg-surface-100 p-1.5 rounded-2xl",children:[(0,s.jsxs)("button",{onClick:()=>g("send"),className:`flex items-center gap-2 px-4 py-2 rounded-xl font-black text-xs transition-all cursor-pointer ${"send"===p?"bg-primary-600 text-white shadow-sm":"text-surface-600 hover:text-surface-900"}`,children:[(0,s.jsx)(d.Send,{className:"w-3.5 h-3.5"}),"ارسال پیامک"]}),(0,s.jsxs)("button",{onClick:()=>g("received"),className:`flex items-center gap-2 px-4 py-2 rounded-xl font-black text-xs transition-all cursor-pointer ${"received"===p?"bg-primary-600 text-white shadow-sm":"text-surface-600 hover:text-surface-900"}`,children:[(0,s.jsx)(l.Inbox,{className:"w-3.5 h-3.5"}),"دریافت پیامک"]})]})]})]}),(0,s.jsxs)("div",{className:"bg-white shadow-sm border border-surface-100 rounded-3xl p-6 sm:p-10 space-y-8",children:[(0,s.jsxs)("div",{className:"space-y-3 pb-6 border-b border-surface-100",children:[(0,s.jsxs)("div",{className:"flex sm:flex-row flex-col justify-between sm:items-center gap-2",children:[(0,s.jsxs)("h2",{className:"font-black text-surface-900 text-xl",children:["send"===p?"سرویس ارسال تک پیامک":"سرویس دریافت پیامک‌های دریافتی"," (",a.toUpperCase(),")"]}),(0,s.jsx)("span",{className:"text-xs text-surface-400 font-mono",children:"url"===a?"Query String":"JSON Request Body"})]}),(0,s.jsxs)("div",{dir:"ltr",className:"flex items-center gap-3 bg-surface-900 p-4 rounded-2xl overflow-x-auto",children:[(0,s.jsx)("span",{className:`px-3 py-1 rounded-lg font-black text-white text-xs ${"url"===a?"bg-emerald-600":"bg-blue-600"}`,children:"url"===a?"GET":"POST"}),(0,s.jsxs)("code",{className:"font-mono text-emerald-400 text-sm whitespace-nowrap",children:["url"===a&&"send"===p&&"/api/v1/user/Messages/url/single","url"===a&&"received"===p&&"/api/v1/user/Messages/url/received","rest"===a&&"send"===p&&"/api/v1/user/Messages/rest/single","rest"===a&&"received"===p&&"/api/v1/user/Messages/rest/received"]})]})]}),"rest"===a&&(0,s.jsxs)("div",{className:"space-y-3",children:[(0,s.jsx)("h3",{className:"font-bold text-surface-900 text-sm",children:"ساختار بدنه درخواست (Request Body - JSON)"}),(0,s.jsx)("pre",{dir:"ltr",className:"bg-surface-900 p-5 rounded-2xl overflow-auto text-emerald-400 font-mono text-xs leading-relaxed",children:"send"===p?`{
+  "recipientNumber": "09172378789",
+  "username": "string",
+  "password": "string",
+  "domainName": "string",
+  "smsLineNumber": "string",
+  "messageText": "string",
+  "apiKey": "string"
+}`:`{
+  "userName": "string",
+  "password": "string",
+  "domainName": "string",
+  "apiKey": "string",
+  "isAllMessage": true,
+  "fromNumber": "string",
+  "fromDate": "string",
+  "toDate": "string"
+}`})]}),(0,s.jsxs)("div",{className:"space-y-3",children:[(0,s.jsx)("h3",{className:"font-black text-surface-900 text-sm",children:"مشخصات پارامترهای ورودی"}),(0,s.jsxs)("div",{className:"border border-surface-200 rounded-2xl overflow-hidden",children:[(0,s.jsxs)("div",{className:"grid grid-cols-12 bg-surface-100/70 p-3.5 font-black text-surface-700 text-xs",children:[(0,s.jsx)("span",{className:"col-span-3",children:"نام فیلد"}),(0,s.jsx)("span",{className:"col-span-2 text-center",children:"نوع داده"}),(0,s.jsx)("span",{className:"col-span-2 text-center",children:"وضعیت"}),(0,s.jsx)("span",{className:"col-span-5",children:"توضیحات"})]}),(0,s.jsx)("div",{className:"divide-y divide-surface-100",children:("url"===a?"send"===p?[{name:"RecipientNumber",type:"string",required:!0,desc:"شماره موبایل گیرنده پیامک (مثال: 09172378789)"},{name:"Username",type:"string",required:!0,desc:"نام کاربری حساب شما در سامانه پیام کوتاه"},{name:"Password",type:"string",required:!0,desc:"رمز عبور حساب کاربری سامانه"},{name:"DomainName",type:"string",required:!0,desc:"نام دامنه سرویس پیامک"},{name:"SmsLineNumber",type:"string",required:!0,desc:"شماره خط اختصاصی یا عمومی ارسال‌کننده پیامک"},{name:"MessageText",type:"string",required:!0,desc:"متن پیامک ارسالی (به صورت URL Encoded)"},{name:"ApiKey",type:"string",required:!0,desc:"کلید احراز هویت API Key دریافت‌شده از پنل"}]:[{name:"UserName",type:"string",required:!0,desc:"نام کاربری حساب شما در سامانه"},{name:"Password",type:"string",required:!0,desc:"رمز عبور حساب کاربری سامانه"},{name:"DomainName",type:"string",required:!0,desc:"نام دامنه سرویس پیامک"},{name:"ApiKey",type:"string",required:!0,desc:"کلید احراز هویت API Key"},{name:"IsAllMessage",type:"boolean",required:!0,desc:"دریافت همه پیام‌ها (مقدار true یا false)"},{name:"FromNumber",type:"string",required:!1,desc:"فیلتر بر اساس شماره ارسال‌کننده (اختیاری)"},{name:"FromDate",type:"string",required:!1,desc:"فیلتر تاریخ شروع (اختیاری)"},{name:"ToDate",type:"string",required:!1,desc:"فیلتر تاریخ پایان (اختیاری)"}]:"send"===p?[{name:"recipientNumber",type:"string",required:!0,desc:"شماره موبایل گیرنده پیامک (مثال: 09172378789)"},{name:"username",type:"string",required:!0,desc:"نام کاربری ورود به سامانه"},{name:"password",type:"string",required:!0,desc:"رمز عبور حساب کاربری"},{name:"domainName",type:"string",required:!0,desc:"نام دامنه سرویس پیامک"},{name:"smsLineNumber",type:"string",required:!0,desc:"شماره خط اختصاصی ارسال‌کننده"},{name:"messageText",type:"string",required:!0,desc:"متن پیامک ارسالی"},{name:"apiKey",type:"string",required:!0,desc:"کلید احراز هویت API Key"}]:[{name:"userName",type:"string",required:!0,desc:"نام کاربری ورود به سامانه"},{name:"password",type:"string",required:!0,desc:"رمز عبور حساب کاربری"},{name:"domainName",type:"string",required:!0,desc:"نام دامنه سرویس پیامک"},{name:"apiKey",type:"string",required:!0,desc:"کلید احراز هویت API Key"},{name:"isAllMessage",type:"boolean",required:!0,desc:"دریافت تمامی پیامک‌ها (مقدار true)"},{name:"fromNumber",type:"string",required:!1,desc:"فیلتر بر اساس شماره فرستنده (اختیاری)"},{name:"fromDate",type:"string",required:!1,desc:"تاریخ شروع جستجو (اختیاری)"},{name:"toDate",type:"string",required:!1,desc:"تاریخ پایان جستجو (اختیاری)"}]).map(e=>(0,s.jsxs)("div",{className:"grid grid-cols-12 items-center p-3.5 text-xs",children:[(0,s.jsx)("span",{className:"col-span-3 font-mono font-bold text-primary-600",dir:"ltr",children:e.name}),(0,s.jsx)("span",{className:"col-span-2 text-center font-mono text-surface-500",children:e.type}),(0,s.jsx)("span",{className:"col-span-2 text-center",children:e.required?(0,s.jsx)("span",{className:"inline-block bg-rose-50 text-rose-600 px-2 py-0.5 rounded-full text-[10px] font-bold",children:"اجباری *"}):(0,s.jsx)("span",{className:"inline-block bg-surface-100 text-surface-500 px-2 py-0.5 rounded-full text-[10px] font-medium",children:"اختیاری"})}),(0,s.jsx)("span",{className:"col-span-5 text-surface-600 leading-relaxed",children:e.desc})]},e.name))})]})]}),(0,s.jsxs)("div",{className:"space-y-4 pt-6 border-t border-surface-100",children:[(0,s.jsxs)("div",{className:"flex sm:flex-row flex-col justify-between sm:items-center gap-3",children:[(0,s.jsxs)("div",{className:"flex items-center gap-2",children:[(0,s.jsx)(c,{className:"w-5 h-5 text-primary-600"}),(0,s.jsx)("h3",{className:"font-black text-surface-900 text-lg",children:"سورس کدهای نمونه به تفکیک زبان"})]}),(0,s.jsx)("div",{className:"flex flex-wrap gap-1.5 bg-surface-100 p-1.5 rounded-2xl w-fit",children:["node","python","php","csharp","go","curl"].map(e=>(0,s.jsx)("button",{onClick:()=>h(e),className:`px-3.5 py-1.5 rounded-xl font-bold text-xs transition-all cursor-pointer ${y===e?"bg-white text-primary-600 shadow-sm":"text-surface-600 hover:text-surface-900"}`,children:"csharp"===e?"C#":"node"===e?"Node.js":"curl"===e?"cURL":e.toUpperCase()},e))})]}),(0,s.jsx)(x,{label:`${a.toUpperCase()} - ${"send"===p?"ارسال پیامک":"دریافت پیامک"} (${y.toUpperCase()})`,language:"csharp"===y?"csharp":"node"===y?"javascript":y,code:N})]})]})]})}],667774)}]);

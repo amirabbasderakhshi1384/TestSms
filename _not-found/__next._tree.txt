@@ -1,3 +1,1 @@
-:HL["/_next/static/chunks/0vjs~zh.3ws.q.css","style"]
-:HL["/_next/static/chunks/0u2q.fbgep97~.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":20,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"wHGSFCe9Ng5srp-rFq8Tj"}
+self.__SSG_MANIFEST=new Set(["\u002Fadmin\u002Ffinance\u002Fgateways\u002F[id]\u002Fedit","\u002Fadmin\u002Flines\u002F[id]","\u002Fadmin\u002Flines\u002F[id]\u002Fsettings","\u002Fadmin\u002Ftickets\u002F[id]","\u002Fagent-dashboard\u002Fannouncements\u002F[id]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

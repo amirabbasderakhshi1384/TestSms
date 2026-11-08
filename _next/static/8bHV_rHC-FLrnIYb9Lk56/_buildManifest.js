@@ -1,11 +1,1 @@
-self.__BUILD_MANIFEST = {
-  "__rewrites": {
-    "afterFiles": [],
-    "beforeFiles": [],
-    "fallback": []
-  },
-  "sortedPages": [
-    "/_app",
-    "/_error"
-  ]
-};self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
+self.__SSG_MANIFEST=new Set(["\u002Fadmin\u002Ffinance\u002Fgateways\u002F[id]\u002Fedit","\u002Fadmin\u002Flines\u002F[id]","\u002Fadmin\u002Flines\u002F[id]\u002Fsettings","\u002Fadmin\u002Ftickets\u002F[id]","\u002Fagent-dashboard\u002Fannouncements\u002F[id]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
