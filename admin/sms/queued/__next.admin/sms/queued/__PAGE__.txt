@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
-2:I[11871,["/_next/static/chunks/0t1z~s925xdmo.js","/_next/static/chunks/0i.l9589uvx0j.js","/_next/static/chunks/0nkq~~4crx90c.js","/_next/static/chunks/0lj0sq52aagej.js","/_next/static/chunks/0_kcmo0leo~qf.js","/_next/static/chunks/0b.sr.j3rf.i3.js"],"default"]
+2:I[11871,["/_next/static/chunks/0t1z~s925xdmo.js","/_next/static/chunks/0i.l9589uvx0j.js","/_next/static/chunks/0whrz3m0ekmof.js","/_next/static/chunks/0f6mp_~d3xhyc.js","/_next/static/chunks/0b.sr.j3rf.i3.js"],"default"]
 3:I[897367,["/_next/static/chunks/0t1z~s925xdmo.js","/_next/static/chunks/0i.l9589uvx0j.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"defaultStatus":"queued","title":"پیامک‌های در صف ارسال (Queued Messages)","subtitle":"مشاهده پیام‌های معلق در نوبت دیسپچ، اولویت‌بندی ارسال و لغو در صورت نیاز"}],[["$","script","script-0",{"src":"/_next/static/chunks/0b.sr.j3rf.i3.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"GX9_B-xBaQpjFcaVd4_3b"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"defaultStatus":"queued","title":"پیامک‌های در صف ارسال (Queued Messages)","subtitle":"مشاهده پیام‌های معلق در نوبت دیسپچ، اولویت‌بندی ارسال و لغو در صورت نیاز"}],[["$","script","script-0",{"src":"/_next/static/chunks/0b.sr.j3rf.i3.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"wHGSFCe9Ng5srp-rFq8Tj"}
 5:null
