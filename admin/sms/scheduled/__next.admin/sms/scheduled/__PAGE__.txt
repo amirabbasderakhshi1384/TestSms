@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
-2:I[11871,["/_next/static/chunks/0t1z~s925xdmo.js","/_next/static/chunks/0i.l9589uvx0j.js","/_next/static/chunks/0nkq~~4crx90c.js","/_next/static/chunks/003chxw_jrcq~.js","/_next/static/chunks/02c38h9.dma1j.js","/_next/static/chunks/0b.sr.j3rf.i3.js"],"default"]
+2:I[11871,["/_next/static/chunks/0t1z~s925xdmo.js","/_next/static/chunks/0i.l9589uvx0j.js","/_next/static/chunks/0nkq~~4crx90c.js","/_next/static/chunks/0lj0sq52aagej.js","/_next/static/chunks/0_kcmo0leo~qf.js","/_next/static/chunks/0b.sr.j3rf.i3.js"],"default"]
 3:I[897367,["/_next/static/chunks/0t1z~s925xdmo.js","/_next/static/chunks/0i.l9589uvx0j.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"defaultStatus":"scheduled","title":"پیامک‌های زمان‌بندی‌شده (Scheduled Messages)","subtitle":"لیست پیامک‌های برنامه‌ریزی‌شده برای ارسال خودکار در ساعات و روزهای آینده"}],[["$","script","script-0",{"src":"/_next/static/chunks/0b.sr.j3rf.i3.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"9iQONSYH0Qnq3qArUhVbv"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"defaultStatus":"scheduled","title":"پیامک‌های زمان‌بندی‌شده (Scheduled Messages)","subtitle":"لیست پیامک‌های برنامه‌ریزی‌شده برای ارسال خودکار در ساعات و روزهای آینده"}],[["$","script","script-0",{"src":"/_next/static/chunks/0b.sr.j3rf.i3.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"GX9_B-xBaQpjFcaVd4_3b"}
 5:null

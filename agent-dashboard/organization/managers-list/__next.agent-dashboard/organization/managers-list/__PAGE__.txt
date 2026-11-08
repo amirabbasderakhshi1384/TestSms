@@ -1,9 +1,9 @@
 1:"$Sreact.fragment"
 2:I[347257,["/_next/static/chunks/0t1z~s925xdmo.js","/_next/static/chunks/0i.l9589uvx0j.js"],"ClientPageRoot"]
-3:I[444934,["/_next/static/chunks/0t1z~s925xdmo.js","/_next/static/chunks/0i.l9589uvx0j.js","/_next/static/chunks/0n3e-p3ofqpxo.js","/_next/static/chunks/0nkq~~4crx90c.js","/_next/static/chunks/02w~~sk-p86mv.js","/_next/static/chunks/02zf6-ws~rr6r.js","/_next/static/chunks/0iq2twftyygwu.js","/_next/static/chunks/04dh64x~.7bgt.js","/_next/static/chunks/0rmbau25ensot.js"],"default"]
+3:I[444934,["/_next/static/chunks/0t1z~s925xdmo.js","/_next/static/chunks/0i.l9589uvx0j.js","/_next/static/chunks/087wwhi~x2~7-.js","/_next/static/chunks/0nkq~~4crx90c.js","/_next/static/chunks/0-ul0~r0xcbn2.js","/_next/static/chunks/02zf6-ws~rr6r.js","/_next/static/chunks/0iq2twftyygwu.js","/_next/static/chunks/04dh64x~.7bgt.js","/_next/static/chunks/0rmbau25ensot.js"],"default"]
 6:I[897367,["/_next/static/chunks/0t1z~s925xdmo.js","/_next/static/chunks/0i.l9589uvx0j.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/_next/static/chunks/04dh64x~.7bgt.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/0rmbau25ensot.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"9iQONSYH0Qnq3qArUhVbv"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/_next/static/chunks/04dh64x~.7bgt.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/0rmbau25ensot.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"GX9_B-xBaQpjFcaVd4_3b"}
 4:{}
 5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
 8:null
