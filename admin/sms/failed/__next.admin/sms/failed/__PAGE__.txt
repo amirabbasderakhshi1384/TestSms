@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
-2:I[11871,["/_next/static/chunks/0t1z~s925xdmo.js","/_next/static/chunks/0i.l9589uvx0j.js","/_next/static/chunks/0whrz3m0ekmof.js","/_next/static/chunks/0f6mp_~d3xhyc.js","/_next/static/chunks/0b.sr.j3rf.i3.js"],"default"]
+2:I[11871,["/_next/static/chunks/0t1z~s925xdmo.js","/_next/static/chunks/0i.l9589uvx0j.js","/_next/static/chunks/0whrz3m0ekmof.js","/_next/static/chunks/0v-j2vmiqc63t.js","/_next/static/chunks/0b.sr.j3rf.i3.js"],"default"]
 3:I[897367,["/_next/static/chunks/0t1z~s925xdmo.js","/_next/static/chunks/0i.l9589uvx0j.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"defaultStatus":"failed","title":"پیامک‌های ناموفق و خطاها (Failed SMS)","subtitle":"بررسی پیامک‌های برگشت‌خورده به دلیل بلک‌لیست، عدم آنتن‌دهی یا خطای اپراتور با قابلیت ارسال مجدد"}],[["$","script","script-0",{"src":"/_next/static/chunks/0b.sr.j3rf.i3.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"n2H_-HG01DWVkkZVWOFiM"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"defaultStatus":"failed","title":"پیامک‌های ناموفق و خطاها (Failed SMS)","subtitle":"بررسی پیامک‌های برگشت‌خورده به دلیل بلک‌لیست، عدم آنتن‌دهی یا خطای اپراتور با قابلیت ارسال مجدد"}],[["$","script","script-0",{"src":"/_next/static/chunks/0b.sr.j3rf.i3.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"1COiJvATC50E7AeMYWa3a"}
 5:null
