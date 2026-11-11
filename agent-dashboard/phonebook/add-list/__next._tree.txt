@@ -1,3 +1,3 @@
 :HL["/_next/static/css/c1e70298632bfb14.css","style"]
 :HL["/_next/static/css/ca415858acd78ff5.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":20,"slots":{"children":{"name":"agent-dashboard","param":null,"prefetchHints":0,"slots":{"children":{"name":"phonebook","param":null,"prefetchHints":0,"slots":{"children":{"name":"add-list","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}},"staleTime":300,"buildId":"65asRIo6nNo_UDB4kQTSv"}
+0:{"tree":{"name":"","param":null,"prefetchHints":20,"slots":{"children":{"name":"agent-dashboard","param":null,"prefetchHints":0,"slots":{"children":{"name":"phonebook","param":null,"prefetchHints":0,"slots":{"children":{"name":"add-list","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}},"staleTime":300,"buildId":"YdLhT_t_bQIcVVtYY2q2z"}
