@@ -1,7 +1,7 @@
 1:"$Sreact.fragment"
-2:I[92825,["/_next/static/chunks/0t1z~s925xdmo.js","/_next/static/chunks/0i.l9589uvx0j.js"],"ClientSegmentRoot"]
-3:I[634896,["/_next/static/chunks/0t1z~s925xdmo.js","/_next/static/chunks/0i.l9589uvx0j.js","/_next/static/chunks/0p54b3ritpb6y.js","/_next/static/chunks/02zf6-ws~rr6r.js","/_next/static/chunks/0g81ajpfe.x_p.js"],"default"]
-4:I[339756,["/_next/static/chunks/0t1z~s925xdmo.js","/_next/static/chunks/0i.l9589uvx0j.js"],"default"]
-5:I[837457,["/_next/static/chunks/0t1z~s925xdmo.js","/_next/static/chunks/0i.l9589uvx0j.js"],"default"]
-0:{"rsc":["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/0p54b3ritpb6y.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/02zf6-ws~rr6r.js","async":true}],["$","script","script-2",{"src":"/_next/static/chunks/0g81ajpfe.x_p.js","async":true}]],["$","$L2",null,{"Component":"$3","slots":{"children":["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]},"serverProvidedParams":{"params":{},"promises":["$@6"]}}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"RgQwbDXJyTMO_UbAP4OOC"}
+2:I[78616,[],"ClientSegmentRoot"]
+3:I[16522,["3986","static/chunks/3986-30d33f8c5acd6b1f.js","5228","static/chunks/5228-72757e2c930c4865.js","4286","static/chunks/4286-705bf3212f2b1796.js","8500","static/chunks/8500-f62a38ff68ab7f42.js","3391","static/chunks/3391-6abfe0a0cc5041ca.js","5767","static/chunks/5767-cfe68785720cf909.js","7504","static/chunks/7504-f3a54036e93f64fb.js","5214","static/chunks/app/agent-dashboard/layout-5ea66e44272ee4a3.js"],"default"]
+4:I[57121,[],""]
+5:I[74581,[],""]
+0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"Component":"$3","slots":{"children":["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]},"serverProvidedParams":{"params":{},"promises":["$@6"]}}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"65asRIo6nNo_UDB4kQTSv"}
 6:"$0:rsc:props:children:1:props:serverProvidedParams:params"

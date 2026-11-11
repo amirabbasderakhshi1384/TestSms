@@ -1,9 +1,9 @@
 1:"$Sreact.fragment"
-2:I[347257,["/_next/static/chunks/0t1z~s925xdmo.js","/_next/static/chunks/0i.l9589uvx0j.js"],"ClientPageRoot"]
-3:I[365957,["/_next/static/chunks/0t1z~s925xdmo.js","/_next/static/chunks/0i.l9589uvx0j.js","/_next/static/chunks/0whrz3m0ekmof.js","/_next/static/chunks/0v-j2vmiqc63t.js","/_next/static/chunks/04rou-v5h8wy3.js"],"default"]
-6:I[897367,["/_next/static/chunks/0t1z~s925xdmo.js","/_next/static/chunks/0i.l9589uvx0j.js"],"OutletBoundary"]
+2:I[61304,[],"ClientPageRoot"]
+3:I[91912,["3986","static/chunks/3986-30d33f8c5acd6b1f.js","5228","static/chunks/5228-72757e2c930c4865.js","6194","static/chunks/6194-cf00512dd444e8be.js","7504","static/chunks/7504-f3a54036e93f64fb.js","1473","static/chunks/1473-a893d9c571ca82a4.js","9432","static/chunks/app/admin/finance/bank-receipts/page-2d61039185d6ab77.js"],"default"]
+6:I[90484,[],"OutletBoundary"]
 7:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/_next/static/chunks/04rou-v5h8wy3.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"RgQwbDXJyTMO_UbAP4OOC"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],null,["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"65asRIo6nNo_UDB4kQTSv"}
 4:{}
 5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
 8:null
