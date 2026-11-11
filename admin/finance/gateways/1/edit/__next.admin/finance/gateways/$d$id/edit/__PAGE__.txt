@@ -2,5 +2,5 @@
 2:I[17772,["3986","static/chunks/3986-30d33f8c5acd6b1f.js","5228","static/chunks/5228-72757e2c930c4865.js","8500","static/chunks/8500-f62a38ff68ab7f42.js","6268","static/chunks/6268-130939ba7fecc966.js","7504","static/chunks/7504-77d806dfc10aaada.js","152","static/chunks/app/admin/finance/gateways/%5Bid%5D/edit/page-070de661f09faa27.js"],"default"]
 3:I[90484,[],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"YdLhT_t_bQIcVVtYY2q2z"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"aX2xU4xqpJnaPcH5ZwYpr"}
 5:null

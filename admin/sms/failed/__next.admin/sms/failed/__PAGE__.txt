@@ -2,5 +2,5 @@
 2:I[48343,["3986","static/chunks/3986-30d33f8c5acd6b1f.js","5228","static/chunks/5228-72757e2c930c4865.js","8500","static/chunks/8500-f62a38ff68ab7f42.js","44","static/chunks/44-51148518a97cd2e5.js","7504","static/chunks/7504-77d806dfc10aaada.js","5243","static/chunks/5243-3793166866058db2.js","8732","static/chunks/app/admin/sms/failed/page-f1e935bf1a5dca08.js"],"default"]
 3:I[90484,[],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"defaultStatus":"failed","title":"پیامک‌های ناموفق و خطاها (Failed SMS)","subtitle":"بررسی پیامک‌های برگشت‌خورده به دلیل بلک‌لیست، عدم آنتن‌دهی یا خطای اپراتور با قابلیت ارسال مجدد"}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"YdLhT_t_bQIcVVtYY2q2z"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"defaultStatus":"failed","title":"پیامک‌های ناموفق و خطاها (Failed SMS)","subtitle":"بررسی پیامک‌های برگشت‌خورده به دلیل بلک‌لیست، عدم آنتن‌دهی یا خطای اپراتور با قابلیت ارسال مجدد"}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"aX2xU4xqpJnaPcH5ZwYpr"}
 5:null
