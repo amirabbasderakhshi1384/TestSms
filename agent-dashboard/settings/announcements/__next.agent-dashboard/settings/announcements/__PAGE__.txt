@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
 3:I[90484,[],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":["$L2",null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"aX2xU4xqpJnaPcH5ZwYpr"}
+0:{"rsc":["$","$1","c",{"children":["$L2",null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"gSekLWHPRJnMtVK4HWg8u"}
 5:null
 2:E{"digest":"NEXT_REDIRECT;replace;/agent-dashboard/settings/announcements/send;307;"}

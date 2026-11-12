@@ -1,9 +1,9 @@
 1:"$Sreact.fragment"
 2:I[61304,[],"ClientPageRoot"]
-3:I[86111,["3986","static/chunks/3986-30d33f8c5acd6b1f.js","5228","static/chunks/5228-72757e2c930c4865.js","4286","static/chunks/4286-705bf3212f2b1796.js","3903","static/chunks/3903-dbed5ab29f2cde78.js","7504","static/chunks/7504-77d806dfc10aaada.js","9479","static/chunks/app/agent-dashboard/finance/buy-credit/page-2399ee7392f9fe1e.js"],"default"]
+3:I[86111,["3986","static/chunks/3986-30d33f8c5acd6b1f.js","5228","static/chunks/5228-72757e2c930c4865.js","4286","static/chunks/4286-705bf3212f2b1796.js","3903","static/chunks/3903-dbed5ab29f2cde78.js","7504","static/chunks/7504-d2e77ddca8d6af79.js","9479","static/chunks/app/agent-dashboard/finance/buy-credit/page-2399ee7392f9fe1e.js"],"default"]
 6:I[90484,[],"OutletBoundary"]
 7:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],null,["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"aX2xU4xqpJnaPcH5ZwYpr"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],null,["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"gSekLWHPRJnMtVK4HWg8u"}
 4:{}
 5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
 8:null
