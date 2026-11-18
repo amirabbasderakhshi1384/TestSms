@@ -1,3 +1,3 @@
 :HL["/_next/static/css/c1e70298632bfb14.css","style"]
-:HL["/_next/static/css/a0d761b7d774aaba.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":20,"slots":{"children":{"name":"dashboard","param":null,"prefetchHints":0,"slots":{"children":{"name":"phonebook","param":null,"prefetchHints":0,"slots":{"children":{"name":"add-contact","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}},"staleTime":300,"buildId":"iPC91iT41yKez_bfbv5sm"}
+:HL["/_next/static/css/617f4bac0b260e2c.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":20,"slots":{"children":{"name":"dashboard","param":null,"prefetchHints":0,"slots":{"children":{"name":"phonebook","param":null,"prefetchHints":0,"slots":{"children":{"name":"add-contact","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}},"staleTime":300,"buildId":"gSUp1irBQwdMWOI8_z7VD"}
