@@ -2,5 +2,5 @@
 2:I[68891,["3986","static/chunks/3986-30d33f8c5acd6b1f.js","5228","static/chunks/5228-72757e2c930c4865.js","8500","static/chunks/8500-f62a38ff68ab7f42.js","7504","static/chunks/7504-4afb3143864193b1.js","5243","static/chunks/5243-2c49efe10120c48b.js","8248","static/chunks/app/admin/sms/scheduled/page-5e1ca64e3a3a4bf0.js"],"default"]
 3:I[90484,[],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"defaultStatus":"scheduled","title":"پیامک‌های زمان‌بندی‌شده (Scheduled Messages)","subtitle":"لیست پیامک‌های برنامه‌ریزی‌شده برای ارسال خودکار در ساعات و روزهای آینده"}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"BR7mqNb1-60WPtjTyDChX"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"defaultStatus":"scheduled","title":"پیامک‌های زمان‌بندی‌شده (Scheduled Messages)","subtitle":"لیست پیامک‌های برنامه‌ریزی‌شده برای ارسال خودکار در ساعات و روزهای آینده"}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ydPo6yg6a8WtqfcpDRKi0"}
 5:null
