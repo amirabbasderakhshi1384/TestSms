@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
-3:I[90484,[],"OutletBoundary"]
+3:I[97367,["/_next/static/chunks/15vta0mnzqrbb.js","/_next/static/chunks/0n4z.7yu76je-.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":["$L2",null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"gSUp1irBQwdMWOI8_z7VD"}
+0:{"rsc":["$","$1","c",{"children":["$L2",null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"Qb4W_WF_8lnx3EZEz0v3h"}
 5:null
 2:E{"digest":"NEXT_REDIRECT;replace;/agent-dashboard/user-sms-inbox/sent;307;"}
