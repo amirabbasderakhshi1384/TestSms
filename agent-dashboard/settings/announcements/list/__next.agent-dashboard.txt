@@ -1,7 +1,7 @@
 1:"$Sreact.fragment"
-2:I[92825,["/_next/static/chunks/15vta0mnzqrbb.js","/_next/static/chunks/0n4z.7yu76je-.js"],"ClientSegmentRoot"]
-3:I[34896,["/_next/static/chunks/15vta0mnzqrbb.js","/_next/static/chunks/0n4z.7yu76je-.js","/_next/static/chunks/08vsm4f1_8mmr.js","/_next/static/chunks/15nv956xj2g7p.js","/_next/static/chunks/0oh6_s19vs7lk.js"],"default"]
-4:I[39756,["/_next/static/chunks/15vta0mnzqrbb.js","/_next/static/chunks/0n4z.7yu76je-.js"],"default"]
-5:I[37457,["/_next/static/chunks/15vta0mnzqrbb.js","/_next/static/chunks/0n4z.7yu76je-.js"],"default"]
-0:{"rsc":["$","$1","c",{"children":[[["$","script","script-0",{"src":"/_next/static/chunks/08vsm4f1_8mmr.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/15nv956xj2g7p.js","async":true}],["$","script","script-2",{"src":"/_next/static/chunks/0oh6_s19vs7lk.js","async":true}]],["$","$L2",null,{"Component":"$3","slots":{"children":["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]},"serverProvidedParams":{"params":{},"promises":["$@6"]}}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"jug5nFr9Cec0d0vZK6k9m"}
+2:I[78616,[],"ClientSegmentRoot"]
+3:I[16522,["3986","static/chunks/3986-30d33f8c5acd6b1f.js","5228","static/chunks/5228-72757e2c930c4865.js","4286","static/chunks/4286-705bf3212f2b1796.js","8500","static/chunks/8500-f62a38ff68ab7f42.js","3391","static/chunks/3391-6abfe0a0cc5041ca.js","5767","static/chunks/5767-cfe68785720cf909.js","7504","static/chunks/7504-4afb3143864193b1.js","5214","static/chunks/app/agent-dashboard/layout-ac0558b24bb27f7e.js"],"default"]
+4:I[57121,[],""]
+5:I[74581,[],""]
+0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"Component":"$3","slots":{"children":["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]},"serverProvidedParams":{"params":{},"promises":["$@6"]}}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"BR7mqNb1-60WPtjTyDChX"}
 6:"$0:rsc:props:children:1:props:serverProvidedParams:params"

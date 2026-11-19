@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
-2:I[31073,["/_next/static/chunks/15vta0mnzqrbb.js","/_next/static/chunks/0n4z.7yu76je-.js","/_next/static/chunks/0v07ufb5d4nz3.js","/_next/static/chunks/0fq_48pnh0dr1.js","/_next/static/chunks/0ng1s5-e.r.v-.js"],"default"]
-3:I[97367,["/_next/static/chunks/15vta0mnzqrbb.js","/_next/static/chunks/0n4z.7yu76je-.js"],"OutletBoundary"]
+2:I[17772,["3986","static/chunks/3986-30d33f8c5acd6b1f.js","5228","static/chunks/5228-72757e2c930c4865.js","8500","static/chunks/8500-f62a38ff68ab7f42.js","6268","static/chunks/6268-130939ba7fecc966.js","7504","static/chunks/7504-4afb3143864193b1.js","152","static/chunks/app/admin/finance/gateways/%5Bid%5D/edit/page-ed576593709abdad.js"],"default"]
+3:I[90484,[],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","script","script-0",{"src":"/_next/static/chunks/0ng1s5-e.r.v-.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"jug5nFr9Cec0d0vZK6k9m"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"BR7mqNb1-60WPtjTyDChX"}
 5:null
